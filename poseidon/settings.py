@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'atlantis',
+    'hexmap',
+    'report_parser',
 ]
 
 MIDDLEWARE = [
