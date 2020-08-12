@@ -9,6 +9,8 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
+import os
+import django_heroku
 
 from pathlib import Path
 
@@ -20,7 +22,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'sx!gi9-zbic!y&brgy-acu07m6h&s2b#mj8y)k_7f)7+$w7x@f'
+SECRET_KEY = "SECRET_KEY environment var will be used"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -118,3 +120,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+django_heroku.settings(locals())
