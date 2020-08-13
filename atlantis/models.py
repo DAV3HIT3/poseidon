@@ -1,14 +1,19 @@
+from django.conf import settings
 from django.db import models
 
-# Atlantis faction (player)
+# Atlantis faction 
 class Faction(models.Model):
     faction_id = models.IntegerField(unique=True)
     name = models.CharField(max_length=120)
 
-# Faction details
-class FactionDetail(models.Model):
+# User faction (player), connect faction to user
+class UserFaction(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
-    password = models.CharField(max_length=120)
+
+# UserfFaction details
+class UserFactionDetail(models.Model):
+    user_faction = models.ForeignKey(UserFaction, on_delete=models.CASCADE)
     war_points = models.IntegerField()
     trade_points = models.IntegerField()
     magic_points = models.IntegerField()
@@ -16,17 +21,22 @@ class FactionDetail(models.Model):
 # Atlantis turn
 class Turn(models.Model):
     turn_id = models.IntegerField(unique=True)
-    faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
     year = models.IntegerField()
     month = models.IntegerField()
 
-# Turn error report
-class TurnError(models.Model):
-    turn = models.ForeignKey(Turn, on_delete=models.CASCADE)
-    text = models.TextField()
-
 # Turn times article
 class TimesArticle(models.Model):
+    turn = models.ForeignKey(Turn, on_delete=models.CASCADE)
+    faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
+    text = models.TextField()
+
+class UserTurn(models.Model):
+    user_faction = models.ForeignKey(UserFaction, on_delete=models.CASCADE)
+    turn = models.ForeignKey(Turn, on_delete=models.CASCADE)
+
+# Turn error report
+class TurnError(models.Model):
+    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
     turn = models.ForeignKey(Turn, on_delete=models.CASCADE)
     text = models.TextField()
 
