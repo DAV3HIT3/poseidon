@@ -6,6 +6,12 @@ class Faction(models.Model):
     faction_id = models.IntegerField(unique=True)
     name = models.CharField(max_length=120)
 
+    def __str__(self):
+        return self.name + " (" + str(self.faction_id) + ")"
+
+    class Meta:
+        ordering = ('faction_id', 'name',)
+
 # User faction (player), connect faction to user
 class UserFaction(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
@@ -14,6 +20,9 @@ class UserFaction(models.Model):
     trade_points = models.IntegerField()
     magic_points = models.IntegerField()
 
+    def __str__(self):
+        return self.user.username + " :  " +  str(self.faction)
+
 
 # Atlantis turn
 class Turn(models.Model):
@@ -21,11 +30,17 @@ class Turn(models.Model):
     year = models.IntegerField()
     month = models.IntegerField()
 
+    def __str__(self):
+        return str(self.turn_id) + " :  " +  str(self.year) + "/" + str(self.month)
+
 # Turn times article
 class TimesArticle(models.Model):
     turn = models.ForeignKey(Turn, on_delete=models.CASCADE)
     faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
     text = models.TextField()
+
+    def __str__(self):
+        return str(self.turn) + " : " + str(self.faction)
 
 class UserTurn(models.Model):
     user_faction = models.ForeignKey(UserFaction, on_delete=models.CASCADE)

@@ -132,3 +132,4 @@ dmypy.json
 
 # Collected static files
 staticfiles
+csv
