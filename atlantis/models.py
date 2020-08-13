@@ -10,13 +10,10 @@ class Faction(models.Model):
 class UserFaction(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
-
-# UserfFaction details
-class UserFactionDetail(models.Model):
-    user_faction = models.ForeignKey(UserFaction, on_delete=models.CASCADE)
     war_points = models.IntegerField()
     trade_points = models.IntegerField()
     magic_points = models.IntegerField()
+
 
 # Atlantis turn
 class Turn(models.Model):
@@ -34,10 +31,14 @@ class UserTurn(models.Model):
     user_faction = models.ForeignKey(UserFaction, on_delete=models.CASCADE)
     turn = models.ForeignKey(Turn, on_delete=models.CASCADE)
 
-# Turn error report
+# User turn error report
 class TurnError(models.Model):
     user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
-    turn = models.ForeignKey(Turn, on_delete=models.CASCADE)
+    text = models.TextField()
+
+# User turn event
+class TurnEvent(models.Model):
+    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
     text = models.TextField()
 
 # Basic atlantis "unit"
