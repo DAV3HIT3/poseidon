@@ -12,6 +12,9 @@ class Faction(models.Model):
     class Meta:
         ordering = ('faction_id', 'name',)
 
+class Attitude(models.Model):
+    name = models.CharField(max_length=120)
+
 # User faction (player), connect faction to user
 class UserFaction(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
@@ -19,6 +22,7 @@ class UserFaction(models.Model):
     war_points = models.IntegerField()
     trade_points = models.IntegerField()
     magic_points = models.IntegerField()
+    default_attitude = models.ForeignKey(Attitude, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.user.username + " :  " +  str(self.faction)
@@ -45,6 +49,11 @@ class TimesArticle(models.Model):
 class UserTurn(models.Model):
     user_faction = models.ForeignKey(UserFaction, on_delete=models.CASCADE)
     turn = models.ForeignKey(Turn, on_delete=models.CASCADE)
+    unclaimed_silver = models.IntegerField()
+
+class FactionAttitude(models.Model):
+    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
+    faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
 
 # User turn error report
 class TurnError(models.Model):
@@ -60,6 +69,7 @@ class TurnEvent(models.Model):
 class Unit(models.Model):
     unit_id = models.IntegerField(unique=True)
     faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
+    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
     name = models.CharField(max_length=120)
     description = models.CharField(max_length=120)
     is_mage = models.BooleanField(default=False)
@@ -71,6 +81,11 @@ class Unit(models.Model):
 class Race(models.Model):
     name = models.CharField(max_length=120)
     default_max_level = models.IntegerField()
+
+ # Atlantis unit flags enums
+class Flag(models.Model):
+    name = models.CharField(max_length=20)
+    description = models.CharField(max_length=120)
 
 # Atlantis skill 
 class Skill(models.Model):
@@ -86,9 +101,13 @@ class UnitMember(models.Model):
 
 # Unit skill level
 class UnitSkill(models.Model):
-    unit = models.ForeignKey(UnitMember, on_delete=models.CASCADE)
+    unit = models.ForeignKey(Unit, on_delete=models.CASCADE)
     skill = models.ForeignKey(Skill, on_delete=models.CASCADE)
     skill_level = models.IntegerField()
+
+class UnitFlag(models.Model):
+    unit = models.ForeignKey(Unit, on_delete=models.CASCADE)
+    flag = models.ForeignKey(Flag, on_delete=models.CASCADE)
 
 # Race specialized skills
 class RaceSkill(models.Model):

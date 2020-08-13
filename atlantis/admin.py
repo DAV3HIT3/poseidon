@@ -10,9 +10,11 @@ class TurnAdmin(admin.ModelAdmin):
 
 class TurnErrorInline(admin.StackedInline):
     model = TurnError
+    extra = 0
 
 class TurnEventInline(admin.StackedInline):
     model = TurnEvent
+    extra = 0
 
 class UserTurnAdmin(admin.ModelAdmin):
     inlines = [TurnErrorInline, TurnEventInline]
