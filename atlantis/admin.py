@@ -9,10 +9,10 @@ admin.site.register(Turn)
 admin.site.register(TimesArticle)
 
 class TurnErrorInline(admin.StackedInline):
-    model = UserError
+    model = TurnError
 
 class TurnEventInline(admin.StackedInline):
-    model = UserEvent
+    model = TurnEvent
 
 class UserTurnAdmin(admin.ModelAdmin):
     inlines = [TurnErrorInline, TurnEventInline]
