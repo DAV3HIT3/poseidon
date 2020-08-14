@@ -1,3 +1,17 @@
 from django.db import models
 
-# Create your models here.
+class Point(models.Model):
+    x = models.IntegerField()
+    y = models.IntegerField()
+    z = models.IntegerField()
+
+
+class RegionType(models.Model):
+    name = models.CharField(max_length=20)
+
+# Hex map tile
+class Tile(models.Model):
+    coordinate = models.ForeignKey(Point, on_delete=models.CASCADE)
+    region_type = models.ForeignKey(RegionType, on_delete=models.CASCADE)
+    name = models.CharField(max_length=20)
+

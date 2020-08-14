@@ -1,6 +1,8 @@
 from django.conf import settings
 from django.db import models
 
+from hexmap.models import *
+
 # Atlantis faction 
 class Faction(models.Model):
     faction_id = models.IntegerField(unique=True)
@@ -65,24 +67,12 @@ class TurnEvent(models.Model):
     user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
     text = models.TextField()
 
-# Basic atlantis "unit"
-class Unit(models.Model):
-    unit_id = models.IntegerField(unique=True)
-    faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
-    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
-    name = models.CharField(max_length=120)
-    description = models.CharField(max_length=120)
-    is_mage = models.BooleanField(default=False)
-    is_quartermaster = models.BooleanField(default=False)
-    purchase_cost = models.IntegerField()
-    maintenance_cost = models.IntegerField()
-
  # Atlantis race
 class Race(models.Model):
     name = models.CharField(max_length=120)
     default_max_level = models.IntegerField()
 
- # Atlantis unit flags enums
+ # Atlantis flags
 class Flag(models.Model):
     name = models.CharField(max_length=20)
     description = models.CharField(max_length=120)
@@ -93,32 +83,58 @@ class Skill(models.Model):
     shortcut = models.CharField(max_length=20)
     description = models.CharField(max_length=120)
 
-# A unit can contain "groups" of different races
-class UnitMember(models.Model):
-    quantity = models.IntegerField()
-    unit = models.ForeignKey(Unit, on_delete=models.CASCADE)
-    race = models.ForeignKey(Race, on_delete=models.CASCADE)
-
-# Unit skill level
-class UnitSkill(models.Model):
-    unit = models.ForeignKey(Unit, on_delete=models.CASCADE)
-    skill = models.ForeignKey(Skill, on_delete=models.CASCADE)
-    skill_level = models.IntegerField()
-
-class UnitFlag(models.Model):
-    unit = models.ForeignKey(Unit, on_delete=models.CASCADE)
-    flag = models.ForeignKey(Flag, on_delete=models.CASCADE)
-
-# Race specialized skills
-class RaceSkill(models.Model):
-    skill = models.ForeignKey(Skill, on_delete=models.CASCADE)
-    max_level = models.IntegerField()
-
 # Skill level description
 class SkillLevel(models.Model):
     skill = models.ForeignKey(Skill, on_delete=models.CASCADE)
     level = models.IntegerField()
     description = models.CharField(max_length=120)
+
+
+ # Atlantis items
+class Item(models.Model):
+    name = models.CharField(max_length=20)
+    description = models.CharField(max_length=120)
+    required_skill = models.ForeignKey(SkillLevel, on_delete=models.CASCADE)
+
+# Basic atlantis "unit"
+class Unit(models.Model):
+    unit_id = models.IntegerField(unique=True)
+
+class UnitDetail(models.Model):
+    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
+    name = models.CharField(max_length=120)
+    faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
+    description = models.CharField(max_length=120)
+    is_mage = models.BooleanField(default=False)
+    is_quartermaster = models.BooleanField(default=False)
+
+# A unit can contain "groups" of different races
+class UnitMember(models.Model):
+    quantity = models.IntegerField()
+    unit = models.ForeignKey(UnitDetail, on_delete=models.CASCADE)
+    race = models.ForeignKey(Race, on_delete=models.CASCADE)
+    purchase_cost = models.IntegerField()
+    maintenance_cost = models.IntegerField()
+
+
+# Unit skill level
+class UnitSkill(models.Model):
+    unit = models.ForeignKey(UnitDetail, on_delete=models.CASCADE)
+    skill = models.ForeignKey(Skill, on_delete=models.CASCADE)
+    skill_level = models.IntegerField()
+
+class UnitFlag(models.Model):
+    unit = models.ForeignKey(UnitDetail, on_delete=models.CASCADE)
+    flag = models.ForeignKey(Flag, on_delete=models.CASCADE)
+
+class UnitItem(models.Model):
+    unit = models.ForeignKey(UnitDetail, on_delete=models.CASCADE)
+    item = models.ForeignKey(Item, on_delete=models.CASCADE)
+
+# Race specialized skills
+class RaceSkill(models.Model):
+    race = models.ForeignKey(Race, on_delete=models.CASCADE)
+    skill_level = models.ForeignKey(SkillLevel, on_delete=models.CASCADE)
 
 
 
