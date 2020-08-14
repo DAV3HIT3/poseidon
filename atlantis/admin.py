@@ -20,10 +20,37 @@ class UserTurnAdmin(admin.ModelAdmin):
     inlines = [TurnErrorInline, TurnEventInline]
     list_display = ('turn', 'user_faction')
 
+# Faction
 admin.site.register(Faction, FactionAdmin)
+
+# UserFaction
 admin.site.register(UserFaction)
 
+# Turn
 admin.site.register(Turn, TurnAdmin)
+
+# Times
 admin.site.register(TimesArticle)
 
+# UserTurn
 admin.site.register(UserTurn, UserTurnAdmin)
+
+# Races
+admin.site.register(Race)
+
+# Flags
+admin.site.register(Flag)
+
+class SkillLevelInline(admin.StackedInline):
+    model = SkillLevel
+    extra = 0
+
+class SkillAdmin(admin.ModelAdmin):
+    inlines = [SkillLevelInline, ]
+
+# Skills
+admin.site.register(Skill, SkillAdmin)
+
+
+
+

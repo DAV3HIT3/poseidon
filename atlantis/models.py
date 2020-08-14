@@ -75,38 +75,53 @@ class Race(models.Model):
  # Atlantis flags
 class Flag(models.Model):
     name = models.CharField(max_length=20)
-    description = models.CharField(max_length=120)
+    description = models.TextField()
 
 # Atlantis skill 
 class Skill(models.Model):
     name = models.CharField(max_length=120)
     shortcut = models.CharField(max_length=20)
-    description = models.CharField(max_length=120)
+    study_cost = models.IntegerField()
 
 # Skill level description
 class SkillLevel(models.Model):
     skill = models.ForeignKey(Skill, on_delete=models.CASCADE)
     level = models.IntegerField()
-    description = models.CharField(max_length=120)
+    description = models.TextField()
 
 
  # Atlantis items
 class Item(models.Model):
     name = models.CharField(max_length=20)
-    description = models.CharField(max_length=120)
+    description = models.TextField()
+    weight = models.IntegerField(default=1)
+    capacity = models.IntegerField(default=0)
+    purchase_cost = models.IntegerField(help_text="Withdraw cost")
+
+# Production skill
+class ProductionSkill(models.Model):
+    item = models.ForeignKey(Item, on_delete=models.CASCADE)
     required_skill = models.ForeignKey(SkillLevel, on_delete=models.CASCADE)
+    production_time = models.IntegerField()
+
+class ProductionMaterial(models.Model):
+    production_skill = models.ForeignKey(ProductionSkill, on_delete=models.CASCADE)
+    item = models.ForeignKey(Item, on_delete=models.CASCADE)
+    quantity = models.IntegerField()
+
 
 # Basic atlantis "unit"
 class Unit(models.Model):
     unit_id = models.IntegerField(unique=True)
 
 class UnitDetail(models.Model):
-    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
+    turn = models.ForeignKey(Turn, on_delete=models.CASCADE)
     name = models.CharField(max_length=120)
     faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
-    description = models.CharField(max_length=120)
+    description = models.TextField()
     is_mage = models.BooleanField(default=False)
     is_quartermaster = models.BooleanField(default=False)
+    silver = models.IntegerField()
 
 # A unit can contain "groups" of different races
 class UnitMember(models.Model):
@@ -116,6 +131,11 @@ class UnitMember(models.Model):
     purchase_cost = models.IntegerField()
     maintenance_cost = models.IntegerField()
 
+# Unit items
+class UnitItem(models.Model):
+    unit = models.ForeignKey(UnitDetail, on_delete=models.CASCADE)
+    quantity = models.IntegerField()
+    item = models.ForeignKey(Item, on_delete=models.CASCADE)
 
 # Unit skill level
 class UnitSkill(models.Model):
@@ -127,14 +147,44 @@ class UnitFlag(models.Model):
     unit = models.ForeignKey(UnitDetail, on_delete=models.CASCADE)
     flag = models.ForeignKey(Flag, on_delete=models.CASCADE)
 
-class UnitItem(models.Model):
-    unit = models.ForeignKey(UnitDetail, on_delete=models.CASCADE)
-    item = models.ForeignKey(Item, on_delete=models.CASCADE)
-
 # Race specialized skills
 class RaceSkill(models.Model):
     race = models.ForeignKey(Race, on_delete=models.CASCADE)
     skill_level = models.ForeignKey(SkillLevel, on_delete=models.CASCADE)
+
+# Atlantis region turn detail
+class RegionDetail(models.Model):
+    region = models.ForeignKey(Region, on_delete=models.CASCADE)
+    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
+    population = models.IntegerField()
+    race = models.ForeignKey(Race, on_delete=models.CASCADE)
+    taxable = models.IntegerField()
+    wages = models.IntegerField()
+    wage_max= models.IntegerField()
+    entertainment_available = models.IntegerField()
+
+# Region turn recruits avaible for sale
+class RegionRecruit(models.Model):
+    region = models.ForeignKey(RegionDetail, on_delete=models.CASCADE)
+    race = models.ForeignKey(Race, on_delete=models.CASCADE)
+    available = models.IntegerField()
+    price = models.IntegerField()
+
+# Region turn items avaible for sale
+class RegionSale(models.Model):
+    region = models.ForeignKey(RegionDetail, on_delete=models.CASCADE)
+    item = models.ForeignKey(Item, on_delete=models.CASCADE)
+    available = models.IntegerField()
+    price = models.IntegerField()
+
+
+# Region turn needs
+class RegionNeed(models.Model):
+    region = models.ForeignKey(RegionDetail, on_delete=models.CASCADE)
+
+# Region turn products
+class RegionProduct(models.Model):
+    region = models.ForeignKey(RegionDetail, on_delete=models.CASCADE)
 
 
 

@@ -9,8 +9,8 @@ class Point(models.Model):
 class RegionType(models.Model):
     name = models.CharField(max_length=20)
 
-# Hex map tile
-class Tile(models.Model):
+# Hex map tile region
+class Region(models.Model):
     coordinate = models.ForeignKey(Point, on_delete=models.CASCADE)
     region_type = models.ForeignKey(RegionType, on_delete=models.CASCADE)
     name = models.CharField(max_length=20)
