@@ -1,3 +1,13 @@
 from django.db import models
+from django.conf import settings
+from django.urls import reverse
 
-# Create your models here.
+#from atlantis.models import *
+
+# Atlantis user turn report
+class UserReport(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    text = models.TextField()
+
+    def get_absolute_url(self):
+        return reverse('report-detail', kwargs={'pk':self.pk})

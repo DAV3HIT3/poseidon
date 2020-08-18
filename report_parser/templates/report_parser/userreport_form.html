@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" id="post-form">{% csrf_token %}
+  {{form.as_p}}
+  <input type="submit" value="Save">
+</form>
+
+<script>
+$('#post-form').on('submit', function(event){
+  event.preventDefault();
+  console.log("form submitted")
+  create_post();
+});
+</script>
+
+{% endblock content %}

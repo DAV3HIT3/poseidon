@@ -1,0 +1,203 @@
+AUTOTAX,"
+              AUTOTAX 1 causes the unit to attempt to tax every turn (without
+              requiring the TAX order) until the flag is unset. AUTOTAX 0
+              unsets the flag.
+            
+            
+              Example:
+            
+            
+              To cause the unit to attempt to tax every turn.
+            
+            
+              
+            
+            AUTOTAX 1
+            "
+AVOID,"
+              AVOID 1 instructs the unit to avoid combat wherever possible.
+              The unit will not enter combat unless it issues an ATTACK order,
+              or the unit's faction is attacked in the unit's hex. AVOID 0
+              cancels this.
+            
+            
+              The Guard and Avoid Combat flags are mutually exclusive; setting
+              one automatically cancels the other.
+            
+            
+              Example:
+            
+            
+              Set the unit to avoid combat when possible.
+            
+            
+              
+            
+            AVOID 1
+            "
+BEHIND,"
+              BEHIND 1 sets the unit to be behind other units in combat. 
+              BEHIND 0 cancels this.
+            
+            
+              Example:
+            
+            
+              Set the unit to be in front in combat.
+            
+            
+              
+            
+            BEHIND 0
+            "
+GUARD,"
+              GUARD 1 sets the unit issuing the order to prevent non-Friendly
+              units from collecting taxes in the region, and to prevent any
+              units not your own from pillaging the region.  Guarding units
+              will also attempt to prevent Unfriendly units from entering the
+              region.  GUARD 0 cancels Guard status.
+            
+            
+              The Guard and Avoid Combat flags are mutually exclusive; setting
+              one automatically cancels the other.
+            
+            
+              Example:
+            
+            
+              Instruct the current unit to be on guard.
+            
+            
+              
+            
+            GUARD 1
+            "
+HOLD,"
+              HOLD 1 instructs the issuing unit to never join a battle in
+              regions the unit is not in.  This can be useful if the unit is
+              in a building, and doesn't want to leave the building to join
+              combat. HOLD 0 cancels holding status.
+            
+            
+              Example:
+            
+            
+              Instruct the unit to avoid combat in other regions.
+            
+            
+              
+            
+            HOLD 1
+            "
+NOAID,"
+              NOAID 1 indicates that if the unit attacks, or is attacked, it
+              is not to be aided by units in other hexes. NOAID status is very
+              useful for scouts or probing units, who do not wish to drag
+              their nearby armies into battle if they are caught. NOAID 0
+              cancels this.
+            
+            
+              If multiple units are on one side in a battle, they must all
+              have the NOAID flag on, or they will receive aid from other
+              hexes.
+            
+            
+              Example:
+            
+            
+              Set a unit to receive no aid in battle.
+            
+            
+              
+            
+            NOAID 1
+            "
+NOCROSS,"
+              NOCROSS 1 indicates that if a unit attempts to cross a body of
+              water then that unit should instead not cross it, regardless of
+              whether the unit otherwise could do so. Units inside a fleet are
+              not affected by this flag (IE, they are able to sail within the
+              fleet). This flag is useful to prevent scouts from accidentally
+              drowning when exploring in games where movement over water is
+              allowed. NOCROSS 0 cancels this.
+            
+            
+              Example:
+            
+            
+              Set a unit to not permit itself to cross water.
+            
+            
+              
+            
+            NOCROSS 1
+            "
+SHARE,"
+              SHARE 1 instructs the unit to share its possessions with any
+              other unit of your faction that needs them.  Thus a unit with a
+              supply of silver could automatically provide silver if any of
+              your other units in the same region does not have enough to
+              perform an action, such as studying, buying or producing. 
+              SHARE 0 returns a unit to its default selfish state.
+            
+            
+              This sharing does not extend to the heat of battle, only to
+              economic actions.  So a unit that is sharing will provide silver
+              for buying or studying, and resources for production (for
+              example, if a sharing unit has wood in its inventory, and
+              another unit is producing axes but has no wood, then the sharing
+              unit will automatically supply wood for that production), but
+              will not provide weapons to all units if combat occurs.
+            
+            
+              Note that in the case of sharing silver, this can leave the
+              sharing unit without enough funds to pay maintenance, so sharing
+              is to be used with care.  You may like to make sure that there
+              is a unit with sufficient funds for maintenance in the same
+              region, and which is not sharing, as those funds will be shared
+              for maintenance, but not for less important purposes.
+            
+            
+              Example:
+            
+            
+              Instruct the unit to share its possessions with other units of
+              the same faction.
+            
+            
+              
+            
+            SHARE 1
+            "
+SPOILS,"
+              The SPOILS order determines which types of spoils the unit
+              should take after a battle.  The valid values for type are
+              'NONE', 'WALK', 'RIDE', 'FLY', 'SWIM', 'SAIL' or 'ALL'. The
+              second form is equivalent to 'SPOILS ALL'.
+            
+            
+              When this command is issued, the unit is instructed to only pick
+              up combat spoils if they could use the chosen form of movement
+              while carrying the spoils. Thus a unit with SPOILS FLY selected
+              would pick up combat spoils until they reached their flying
+              capacity.  If the spoils provide movement capacity themselves,
+              this will be included in the decision of whether or not to take
+              the spoils - so a unit with SPOILS RIDE would always pick up
+              horses. SPOILS SAIL will use the capacity of the fleet the unit
+              is in to determine whether to take spoils or not. SPOILS ALL
+              will allow a unit to collect any spoils which are dropped
+              regardless of weight or capacity. SPOILS NONE will instruct the
+              unit to only collect weightless items, such as silver.
+            
+            
+              Example:
+            
+            
+              Set a unit to only pick up items that it can carry and continue
+              to fly:
+            
+            
+              
+            
+            SPOILS FLY
+            "

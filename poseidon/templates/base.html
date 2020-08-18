@@ -1,0 +1,19 @@
+
+{% load static %}
+<html>
+  <head>
+    {% load bootstrap4 %} 
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+  </head>
+  <body>
+    <div class="page-header">
+    </div>
+    <div class="content container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+  <foot>
+  </foot>
+</html>

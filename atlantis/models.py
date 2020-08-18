@@ -48,10 +48,22 @@ class TimesArticle(models.Model):
     def __str__(self):
         return str(self.turn) + " : " + str(self.faction)
 
+# Associate a turn with a specific user
 class UserTurn(models.Model):
     user_faction = models.ForeignKey(UserFaction, on_delete=models.CASCADE)
     turn = models.ForeignKey(Turn, on_delete=models.CASCADE)
     unclaimed_silver = models.IntegerField()
+
+# User's turn forcasting
+class UserForecast(models.Model):
+    user_faction = models.ForeignKey(UserFaction, on_delete=models.CASCADE)
+    turn = models.ForeignKey(Turn, on_delete=models.CASCADE)
+    unclaimed_silver = models.IntegerField()
+
+# User's turn order
+class UserOrder(models.Model):
+    user_faction = models.ForeignKey(UserFaction, on_delete=models.CASCADE)
+    turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
 
 class FactionAttitude(models.Model):
     user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
@@ -114,14 +126,26 @@ class ProductionMaterial(models.Model):
 class Unit(models.Model):
     unit_id = models.IntegerField(unique=True)
 
+# Unit's turn specific details
 class UnitDetail(models.Model):
-    turn = models.ForeignKey(Turn, on_delete=models.CASCADE)
+    turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
     name = models.CharField(max_length=120)
     faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
     description = models.TextField()
     is_mage = models.BooleanField(default=False)
     is_quartermaster = models.BooleanField(default=False)
     silver = models.IntegerField()
+
+# Unit's turn order specific details
+class UnitOrder(models.Model):
+    turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
+    name = models.CharField(max_length=120)
+    faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
+    description = models.TextField()
+    is_mage = models.BooleanField(default=False)
+    is_quartermaster = models.BooleanField(default=False)
+    silver = models.IntegerField()
+
 
 # A unit can contain "groups" of different races
 class UnitMember(models.Model):
