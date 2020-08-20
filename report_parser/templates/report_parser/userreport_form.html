@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
+
+<script src="{% static 'report_parser/js/report_parser.js'%}"></script>
+
 <form method="post" id="post-form">{% csrf_token %}
   {{form.as_p}}
   <input type="submit" value="Save">
@@ -8,9 +12,17 @@
 <script>
 $('#post-form').on('submit', function(event){
   event.preventDefault();
-  console.log("form submitted")
-  create_post();
+  console.log("not submitting, parsing form...")
+  parse_report();
 });
+
+function parse_report(){
+  console.log("now parsing report...")
+  var report_text = $('#id_text').val() 
+  
+  parseReport(report_text);
+}
+
 </script>
 
 {% endblock content %}
