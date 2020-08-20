@@ -40,8 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'csvimport.app.CSVImportConf',
+    'require',
     'jquery',
     'bootstrap4',
+    'poseidon',
     'atlantis',
     'hexmap',
     'report_parser',
@@ -128,5 +130,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'require.storage.OptimizedStaticFilesStorage'
+STATICFILES_DIRS = [ "poseidon/static", ]
 
 django_heroku.settings(locals())
