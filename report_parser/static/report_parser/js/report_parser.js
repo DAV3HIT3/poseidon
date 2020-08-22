@@ -2,8 +2,6 @@
 function parseReport(report_data){
   //console.log("parseReport( " + report_data + " )");
 
-  var json_data = null;
-  
   require(['nearley', '/static/report_parser/js/grammar-base-compiled.js'], function (){
     //console.log("now parsing (" + report_data + " )");
 
@@ -13,14 +11,13 @@ function parseReport(report_data){
 
     try{
       parser.feed(report_data);
-      //console.log(parser.results);
-      json_data = parser.results;
+      console.log(parser.results);
+      $('#id_json_data').val(parser.results);
+      return parser.results;
     } catch(err){
       alert("Error parsing report!", err);
       console.log("Error parsing report: ", err);
     }
   });
-
-  return json_data;
 }
 

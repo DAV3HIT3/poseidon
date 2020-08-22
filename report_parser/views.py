@@ -16,15 +16,15 @@ class UserReportList(LoginRequiredMixin, ListView):
 class UserReportDetail(LoginRequiredMixin, DetailView):
     model = UserReport
 
-class UserReportAdd(LoginRequiredMixin, FormView):
-    template_name = 'report_parser/userreport_form.html'
-    form_class = SubmitReportForm
+class UserReportAdd(LoginRequiredMixin, CreateView):
+    #template_name = 'report_parser/userreport_form.html'
+    #form_class = SubmitReportForm
 
     def form_valid(self, form):
         # Add the logged int user to the form data
         form.instance.user = self.request.user
         # Parse the report data
-        form.parse_report()
+        #form.parse_report()
         return super().form_valid(form)
 
 

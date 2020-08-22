@@ -8,6 +8,7 @@ from django.urls import reverse
 class UserReport(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     text = models.TextField()
+    json_data = models.JSONField()
 
     def get_absolute_url(self):
         return reverse('report-detail', kwargs={'pk':self.pk})
