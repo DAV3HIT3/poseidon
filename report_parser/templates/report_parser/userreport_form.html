@@ -25,8 +25,11 @@ $('#post-form').on('submit', function(event){
 
 function parse_report(){
   var report_text = $('#id_text').val();
-  console.log("form parse_report text = " + report_text);
-  parseReport(report_text);
+  //console.log("form parse_report text = " + report_text);
+  console.log("Parsing data...");
+  var json_data = parseReport(report_text);
+  console.log(json_data);
+  $('#id_json_data').val(json_data);
 }
 
 </script>
