@@ -8,5 +8,5 @@ class UserReportForm(ModelForm):
     json_data = forms.CharField(widget=forms.HiddenInput())
     class Meta:
         model = UserReport
-        fields = ["text",]
+        fields = ["text", "json_data"]
         
