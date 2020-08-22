@@ -31,7 +31,7 @@ REPORT_PARSER ->
   {% filterEmpty %}
 
 START ->
-  "Atlantis Report For:" NL_ {% noop %}
+  NL:* _:* "Atlantis Report For:" NL_ {% noop %}
 
 
 

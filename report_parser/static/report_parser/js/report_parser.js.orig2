@@ -3,7 +3,7 @@ function parseReport(report_data){
   console.log("parseReport( " + report_data + " )");
 
   
-  require(['nearley', '/static/report_parser/js/grammar-base-compiled.js'], function (){
+  require(['nearley', '/static/report_parser/js/test_grammar.js'], function (){
     console.log("now parsing (" + report_data + " )");
 
     const parser = new nearley.Parser(nearley.Grammar.fromCompiled(window.grammar));
@@ -11,11 +11,13 @@ function parseReport(report_data){
     console.log("In parseReport, calling parser(" + report_data + ")");
 
     try{
-      parser.feed(report_data);
+      //parser.feed(report_data);
+      parser.feed("foo");
+
       console.log(parser.results);
     } catch(err){
-      alert("Error parsing report!", err);
       console.log("Error parsing report: ", err);
+      alert("Error parsing report!");
     }
   });
 

@@ -4,3 +4,4 @@ django-heroku
 django-csvimport
 django-bootstrap4
 django-jquery
+django-require

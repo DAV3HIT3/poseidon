@@ -63,6 +63,9 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
+# Node modules
+node_modules
+
 # Flask stuff:
 instance/
 .webassets-cache
@@ -133,3 +136,8 @@ dmypy.json
 # Collected static files
 staticfiles
 csv
+
+# Temporary files & backups
+*.orig
+*.old
+*.bak

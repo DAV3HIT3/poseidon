@@ -1,2 +1,2 @@
-main -> (statement "\n"):+
+main -> (statement):+
 statement -> "foo" | "bar"

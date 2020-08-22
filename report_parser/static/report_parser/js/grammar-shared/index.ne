@@ -1,4 +1,5 @@
 @{%
+  
   const noop = () => null;
 
   const filterEmpty = (d) => {
@@ -52,14 +53,15 @@
 %}
 
 
+# New line - send to noop processor, which 
 NL ->
   [\n] {% noop %}
 
-
+# One or more new lines
 NL_ ->
   NL:+
 
-
+# One or more Integers
 INT ->
   [0-9]:+ {% (d) => parseInt(d[0].join("")) %}
 
