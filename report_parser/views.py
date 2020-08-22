@@ -4,7 +4,7 @@ from django.urls import reverse_lazy
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, DetailView
-from django.views.generic.edit import CreateView, DeleteView, UpdateView
+from django.views.generic.edit import CreateView, DeleteView, UpdateView, FormView
 
 from atlantis.models import *
 from .forms import *
@@ -16,13 +16,17 @@ class UserReportList(LoginRequiredMixin, ListView):
 class UserReportDetail(LoginRequiredMixin, DetailView):
     model = UserReport
 
-class UserReportAdd(LoginRequiredMixin, CreateView):
-    model = UserReport
-    fields = ['text',]
+class UserReportAdd(LoginRequiredMixin, FormView):
+    template_name = 'report_parser/userreport_form.html'
+    form_class = SubmitReportForm
 
     def form_valid(self, form):
+        # Add the logged int user to the form data
         form.instance.user = self.request.user
+        # Parse the report data
+        form.parse_report()
         return super().form_valid(form)
+
 
 class UserReportUpdate(LoginRequiredMixin, UpdateView):
     model = UserReport

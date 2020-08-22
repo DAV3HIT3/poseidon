@@ -4,9 +4,10 @@ from django import forms
 
 from .models import *
 
-class UserReportForm(ModelForm):
+class SubmitReportForm(forms.Form):
+    text = forms.CharField(widget=forms.Textarea)
     json_data = forms.CharField(widget=forms.Textarea)
-    class Meta:
-        model = UserReport
-        fields = ["text", "json_data"]
-        
+
+    def parse_report(self):
+        # get the parsed json data and create the appropriate models
+        pass
