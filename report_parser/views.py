@@ -17,8 +17,8 @@ class UserReportDetail(LoginRequiredMixin, DetailView):
     model = UserReport
 
 class UserReportAdd(LoginRequiredMixin, CreateView):
-    #template_name = 'report_parser/userreport_form.html'
-    #form_class = SubmitReportForm
+    model = UserReport
+    fields = ['text', 'json_data']
 
     def form_valid(self, form):
         # Add the logged int user to the form data
