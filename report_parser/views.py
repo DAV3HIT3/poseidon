@@ -2,9 +2,11 @@ from django.shortcuts import render, redirect
 
 from django.urls import reverse_lazy
 
+from django.forms import Textarea
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView, DeleteView, UpdateView, FormView
+from django_json_widget.widgets import JSONEditorWidget
 
 from atlantis.models import *
 from .forms import *
@@ -19,6 +21,9 @@ class UserReportDetail(LoginRequiredMixin, DetailView):
 class UserReportAdd(LoginRequiredMixin, CreateView):
     model = UserReport
     fields = ['text', 'json_data']
+    widgets = {
+            "json_data": JSONEditorWidget
+        }
 
     def form_valid(self, form):
         # Add the logged int user to the form data
@@ -26,6 +31,7 @@ class UserReportAdd(LoginRequiredMixin, CreateView):
         # Parse the report data
         #form.parse_report()
         return super().form_valid(form)
+
 
 
 class UserReportUpdate(LoginRequiredMixin, UpdateView):

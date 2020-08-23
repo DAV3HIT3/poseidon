@@ -7,17 +7,25 @@
 {% require_module 'nearley'%}
 {% require_module '/static/report_parser/js/grammar-base-compiled.js' %}
 
+<h3>Submit Report</h3>
+
 <script src="{% static 'report_parser/js/report_parser.js' %}"></script>
 
-
 <form method="post" id="post-form">{% csrf_token %}
-  {{form.text}}
-  {{form.json_data.as_hidden}}
-  {%if form.json_data.errors %}
-  <div class="alert alert-info">
-    {{form.json_data.errors}}
-  </div>
-  {%endif%}
+  {{form.non_field_errors}} 
+  <dl>
+    <dt>Paste report text</dt>
+    <dd>{{form.text}}</dd>
+
+    <dt>Parsed JSON report</dt>
+    <dd>{{form.json_data}}
+    {%if form.json_data.errors %}
+    <div class="alert alert-info">
+      {{form.json_data.errors}}
+    </div>
+    {%endif%}
+    </dd>
+  </dl>
   <input type="submit" value="Save">
 </form>
 
