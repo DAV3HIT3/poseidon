@@ -12,6 +12,8 @@
 
 <form method="post" id="post-form">{% csrf_token %}
   {{form.as_p}}
+  {{form.id_text}}
+  {{form.id_json_data.as_hidden}}
   <input type="submit" value="Save">
 </form>
 
