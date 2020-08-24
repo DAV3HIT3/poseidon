@@ -6,7 +6,7 @@ from django.forms import Textarea
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView, DeleteView, UpdateView, FormView
-from django_json_widget.widgets import JSONEditorWidget
+from prettyjson import PrettyJSONWidget
 
 from atlantis.models import *
 from .forms import *
@@ -22,7 +22,7 @@ class UserReportAdd(LoginRequiredMixin, CreateView):
     model = UserReport
     fields = ['text', 'json_data']
     widgets = {
-            "json_data": JSONEditorWidget
+            "json_data": PrettyJSONWidget(),,
         }
 
     def form_valid(self, form):

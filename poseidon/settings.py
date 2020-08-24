@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'require',
     'jquery',
     'bootstrap4',
-    'django_json_widget',
+    'prettyjson',
     'poseidon',
     'atlantis',
     'hexmap',

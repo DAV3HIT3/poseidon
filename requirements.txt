@@ -5,4 +5,4 @@ django-csvimport
 django-bootstrap4
 django-jquery
 django-require
-django-json-widget
+django-prettyjson
