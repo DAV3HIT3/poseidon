@@ -17,6 +17,9 @@ class Faction(models.Model):
 class Attitude(models.Model):
     name = models.CharField(max_length=120)
 
+    def __str__(self):
+        return self.name 
+
 # User faction (player), connect faction to user
 class UserFaction(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
@@ -32,12 +35,15 @@ class UserFaction(models.Model):
 
 # Atlantis turn
 class Turn(models.Model):
-    turn_id = models.IntegerField(unique=True)
+    turn_number = models.IntegerField(blank=True,null=True)
     year = models.IntegerField()
     month = models.IntegerField()
 
     def __str__(self):
-        return str(self.turn_id) + " :  " +  str(self.year) + "/" + str(self.month)
+        return  str(self.year) + "/" + str(self.month)
+
+    class Meta:
+        unique_together = ('year', 'month')
 
 # Turn times article
 class TimesArticle(models.Model):
@@ -68,32 +74,33 @@ class UserOrder(models.Model):
 class FactionAttitude(models.Model):
     user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
     faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
+    attitude = models.ForeignKey(Attitude, on_delete=models.CASCADE)
 
-# User turn error report
-class TurnError(models.Model):
-    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
-    text = models.TextField()
-
-# User turn event
-class TurnEvent(models.Model):
-    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
-    text = models.TextField()
 
  # Atlantis race
 class Race(models.Model):
     name = models.CharField(max_length=120)
     default_max_level = models.IntegerField()
 
+    def __str__(self):
+        return self.name 
+
  # Atlantis flags
 class Flag(models.Model):
     name = models.CharField(max_length=20)
     description = models.TextField()
+
+    def __str__(self):
+        return self.name 
 
 # Atlantis skill 
 class Skill(models.Model):
     name = models.CharField(max_length=120)
     shortcut = models.CharField(max_length=20)
     study_cost = models.IntegerField()
+
+    def __str__(self):
+        return self.name 
 
 # Skill level description
 class SkillLevel(models.Model):
@@ -109,6 +116,9 @@ class Item(models.Model):
     weight = models.IntegerField(default=1)
     capacity = models.IntegerField(default=0)
     purchase_cost = models.IntegerField(help_text="Withdraw cost")
+
+    def __str__(self):
+        return self.name 
 
 # Production skill
 class ProductionSkill(models.Model):
@@ -126,8 +136,12 @@ class ProductionMaterial(models.Model):
 class Unit(models.Model):
     unit_id = models.IntegerField(unique=True)
 
+    def __str__(self):
+        return str(self.unit_id)
+
 # Unit's turn specific details
 class UnitDetail(models.Model):
+    unit = models.ForeignKey(Unit, on_delete=models.CASCADE)
     turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
     name = models.CharField(max_length=120)
     faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
@@ -136,8 +150,12 @@ class UnitDetail(models.Model):
     is_quartermaster = models.BooleanField(default=False)
     silver = models.IntegerField()
 
+    def __str__(self):
+        return self.name 
+
 # Unit's turn order specific details
 class UnitOrder(models.Model):
+    unit = models.ForeignKey(Unit, on_delete=models.CASCADE)
     turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
     name = models.CharField(max_length=120)
     faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
@@ -149,6 +167,7 @@ class UnitOrder(models.Model):
 
 # A unit can contain "groups" of different races
 class UnitMember(models.Model):
+    unit = models.ForeignKey(Unit, on_delete=models.CASCADE)
     quantity = models.IntegerField()
     unit = models.ForeignKey(UnitDetail, on_delete=models.CASCADE)
     race = models.ForeignKey(Race, on_delete=models.CASCADE)
@@ -170,6 +189,23 @@ class UnitSkill(models.Model):
 class UnitFlag(models.Model):
     unit = models.ForeignKey(UnitDetail, on_delete=models.CASCADE)
     flag = models.ForeignKey(Flag, on_delete=models.CASCADE)
+
+# User turn error report
+class TurnError(models.Model):
+    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
+    text = models.TextField()
+    unit = models.ForeignKey(Unit, on_delete=models.CASCADE, null=True)
+    error_type = models.CharField(max_length=20,blank=True)
+    error_msg = models.CharField(max_length=120,blank=True)
+    
+
+# User turn event
+class TurnEvent(models.Model):
+    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
+    text = models.TextField()
+    unit = models.ForeignKey(Unit, on_delete=models.CASCADE, null=True)
+    event_msg = models.CharField(max_length=120,blank=True)
+
 
 # Race specialized skills
 class RaceSkill(models.Model):
