@@ -28,7 +28,7 @@ class UserReportAdd(LoginRequiredMixin, CreateView):
         form.instance.user = self.request.user
 
         report_parser = ParseAtlantisReport(form.instance.json_data)
-        report_parser.parseJson(self.request.user)
+        report_valid = report_parser.parseJson(self.request.user)
 
         #try:
         #    report_parser = ParseAtlantisReport(form.instance.json_data)

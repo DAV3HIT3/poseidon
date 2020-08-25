@@ -24,10 +24,10 @@ class Attitude(models.Model):
 class UserFaction(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
-    war_points = models.IntegerField()
-    trade_points = models.IntegerField()
-    magic_points = models.IntegerField()
-    default_attitude = models.ForeignKey(Attitude, on_delete=models.CASCADE)
+    war_points = models.IntegerField(null=True)
+    trade_points = models.IntegerField(null=True)
+    magic_points = models.IntegerField(null=True)
+    default_attitude = models.ForeignKey(Attitude, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.user.username + " :  " +  str(self.faction)
