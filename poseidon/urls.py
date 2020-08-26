@@ -20,5 +20,6 @@ urlpatterns = [
     path('', include('atlantis.urls')),
     path('reports/', include('report_parser.urls')),
 
+    path('account/', include('account.urls')),
     path('admin/', admin.site.urls),
 ]
