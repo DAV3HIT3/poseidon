@@ -1,5 +1,4 @@
-import re
-import calendar
+import re, calendar, sys
 
 from atlantis.models import *
 from hexmap.models import *
@@ -286,7 +285,22 @@ class ParseAtlantisReport:
         if "regions" in report_section:
             region_list = report_section["regions"]
             for region in region_list:
-                pass
+                region_obj = {}
+                if "title" in region:
+                    region_obj["name"] = region["title"]
+                    print(region_obj["name"], file=sys.stderr)
+                if "coordinates" in region:
+                    coordinate = region["coordinates"]
+                    coord, created = Point.objects.get_or_create(**coordinate)
+                    region_obj["coordinate"] = coord
+                if "type" in region:
+                    region_typename = region["type"][0]
+                    region_type, created = RegionType.objects.get_or_create(name=region_typename)
+                    region_obj["region_type"] = region_type
+
+                print(region_obj, file=sys.stderr)
+                region_rec, created = Region.objects.get_or_create(**region_obj)
+
                 
 
     # ---------------------------------------------------------------------------------------------------------------------
