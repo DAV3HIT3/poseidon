@@ -40,12 +40,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'csvimport.app.CSVImportConf',
-    'require',
-    'jquery',
-    'bootstrap4',
-    'prettyjson',
-    'account',
+
+    'csvimport.app.CSVImportConf',  # django-csvimport
+    'account',                      # django-user-accounts
+    'require',                      # django-require
+    'jquery',                       # django-jquery
+    'bootstrap4',                   # django-bootstrap4
+    'prettyjson', # remove?
+
     'poseidon',
     'atlantis',
     'hexmap',
@@ -63,6 +65,13 @@ MIDDLEWARE = [
     'account.middleware.LocaleMiddleware',
     'account.middleware.TimezoneMiddleware',
 ]
+
+# django-user-accounts settings
+SITE_ID = 1
+EMAIL_HOST = os.environ.get('MAILGUN_SMTP_SERVER', '')
+EMAIL_PORT = os.environ.get('MAILGUN_SMTP_PORT', '')
+EMAIL_HOST_USER = os.environ.get('MAILGUN_SMTP_LOGIN', '')
+EMAIL_HOST_PASSWORD = os.environ.get('MAILGUN_SMTP_PASSWORD', '')
 
 ROOT_URLCONF = 'poseidon.urls'
 

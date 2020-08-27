@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+from . import views
+
 urlpatterns = [
-    path('', include('atlantis.urls')),
+    path('', views.index, name='index'),
+    path('atlantis/', include('atlantis.urls')),
     path('reports/', include('report_parser.urls')),
 
     path('account/', include('account.urls')),
