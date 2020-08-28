@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.urls import reverse_lazy
 
@@ -13,5 +13,14 @@ class UserTurnList(LoginRequiredMixin, ListView):
     model = UserTurn
 
     def get_queryset(self):
-        qs = get_object_or_404(UserTurn, user_faction__user=self.request.user)
+        qs = UserTurn.objects.filter(user_faction__user=self.request.user)
         return qs
+
+
+#class UserTurnList(LoginRequiredMixin, ListView):
+#    model = UserTurn
+#
+#    def get_queryset(self):
+#        qs = get_object_or_404(UserTurn, user_faction__user=self.request.user)
+#        return qs
+

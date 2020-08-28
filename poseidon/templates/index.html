@@ -1,7 +1,7 @@
 {% extends 'base.html'%}
 
 {% block page_header %}
-{% if is_authenticated %}
+{% if user.is_authenticated %}
 <h1>Hello {{user.username}}, Welcome to Poseidon!</h1>
 {% else %}
 <h1>Hello Atlantis, Welcome to Poseidon!</h1>

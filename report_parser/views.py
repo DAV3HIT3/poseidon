@@ -18,7 +18,7 @@ class UserReportList(LoginRequiredMixin, ListView):
     model = UserReport
 
     def get_queryset(self):
-        qs = get_object_or_404(UserReport, user=self.request.user)
+        qs = UserReport.objects.filter(user=self.request.user)
         return qs
 
 class UserReportDetail(LoginRequiredMixin, DetailView):
