@@ -1,8 +1,10 @@
 
 from django.urls import path
 
-from . import views
+from .views import *
 
+app_name = 'atlantis'
 urlpatterns = [
-    #path('', views.index, name='index'),
+    path('', UserTurnList.as_view(), name='turn-list'),
+    #path('<int:pk>', TurnDetail.as_view(), name='turn-detail'),
 ]

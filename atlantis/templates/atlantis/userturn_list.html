@@ -1,14 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Reports</h2>
+  <h2>User Turns</h2>
   <ul>
-    {% for report in page_obj %}
-    <li><textarea>{{report.text}}</textarea>
-    <button onclick="location.href='{% url 'report:delete' report.id %}'" type="button">Delete</button>
-    </li>
+    {% for userturn in page_obj %}
+    <li><a href="{% url 'atlantis:turn-detail' 'userturn.pk'%}">{{userturn.year}}/{{userturn.month}}</a></li>
     {% empty %}
-      <li>No reports loaded</li>
+    <li>No turns available</li>
     {% endfor %}
   </ul>
 
