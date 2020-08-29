@@ -86,6 +86,8 @@ class ParseAtlantisReport:
                 else:
                     print("WARNING! Unknown report section" + report_section["type"])
 
+        return True
+
     # ---------------------------------------------------------------------------------------------------------------------
     # Faction info contains basic faction name, id, and war, trade, & magic points
     # Creates faction, and logged-in user's faction if not existing

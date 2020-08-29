@@ -42,6 +42,8 @@ class UserReportAdd(LoginRequiredMixin, CreateView):
         report_parser = ParseAtlantisReport(form.instance.json_data)
         # Call parser method, pass in current user
         report_valid = report_parser.parseJson(self.request.user)
+        if report_valid:
+            form.instance.turn = report_parser.user_turn
 
         return super().form_valid(form)
 
