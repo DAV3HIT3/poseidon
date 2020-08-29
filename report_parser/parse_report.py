@@ -288,7 +288,7 @@ class ParseAtlantisReport:
                 region_obj = {}
                 if "title" in region:
                     region_obj["name"] = region["title"]
-                    print(region_obj["name"], file=sys.stderr)
+                    #print(region_obj["name"], file=sys.stderr)
                 if "coordinates" in region:
                     coordinate = region["coordinates"]
                     coord, created = Point.objects.get_or_create(**coordinate)
@@ -298,7 +298,7 @@ class ParseAtlantisReport:
                     region_type, created = RegionType.objects.get_or_create(name=region_typename)
                     region_obj["region_type"] = region_type
 
-                print(region_obj, file=sys.stderr)
+                #print(region_obj, file=sys.stderr)
                 region_rec, created = Region.objects.get_or_create(**region_obj)
 
                 

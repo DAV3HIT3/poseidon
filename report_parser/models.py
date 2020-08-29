@@ -11,4 +11,4 @@ class UserReport(models.Model):
     json_data = models.JSONField(default=dict)
 
     def get_absolute_url(self):
-        return reverse('report-detail', kwargs={'pk':self.pk})
+        return reverse('report:detail', kwargs={'pk':self.pk})

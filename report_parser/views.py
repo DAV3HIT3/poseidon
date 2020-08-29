@@ -26,7 +26,9 @@ class UserReportDetail(LoginRequiredMixin, DetailView):
 
     def get_queryset(self):
         # Filter by loggin user
-        qs = super(UserReporDetail,self).get_queryset().filter(user=self.request.user)
+        qs = UserReport.objects.filter(user=self.request.user)
+        return qs
+
 
 class UserReportAdd(LoginRequiredMixin, CreateView):
     model = UserReport

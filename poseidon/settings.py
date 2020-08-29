@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
 
     'csvimport.app.CSVImportConf',  # django-csvimport
     'account',                      # django-user-accounts
@@ -75,6 +76,8 @@ EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey'
 EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+LOGIN_URL = 'account/login/'
 
 ROOT_URLCONF = 'poseidon.urls'
 

@@ -1,5 +1,57 @@
 {% extends 'base.html' %}
+{% load poseidon_extras %}
+{% load humanize %}
 {% block content %}
-<p>{{object.turn.year}}/{{object.turn.month}}</p>
-<p>{{object.unclaimed_silver}}</p>
+
+<h3>Turn report for {{object.user_faction.faction.name}}</h3>
+<h4>{{object.turn.month|month_name}}, Atlantis Year {{object.turn.year}}</h4>
+
+<dl>
+  <dt>Unclaimed Silver</dt><dd>{{object.unclaimed_silver|intcomma}} &#x20B3;</dd>
+  <dt>Faction Points</dt><dd>War: {{object.user_faction.war_points}}, Trade: {{object.user_faction.trade_points}}, Magic: {{object.user_faction.magic_points}}</dd>
+
+  <dt>Attitudes</dt> {% for faction_attitude in object.faction_attitudes.all %}
+                     <dd>{{faction_attitude.attitude.name}} {{faction_attitude.faction.name}}</dd>
+                     {% empty %}<dd>TBD</dd>{% endfor %}
+  <dt>Faction Status</dt> <dd>TBD</dd>
+</dl>
+<hr>
+<h4>Turn Errors</h4>
+<table class="pure-table">
+  <thead>
+    <tr><th>Unit</th><th>Type</th><th>Message</th>
+  </thead>
+  <tbody>
+  {% for error in object.turn_errors.all %}
+  <tr>
+    <td>{{error.unit.unit_id}}</td> 
+    <td>{{error.error_type}}</td>
+    <td>{{error.error_msg}}</td>
+  </tr>
+  {% empty %}
+  <tr>
+  <td>No errors</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<hr>
+<h4>Turn Events</h4>
+<table class="pure-table">
+  <thead>
+    <tr><th>Unit</th><th>Message</th>
+  </thead>
+  <tbody>
+  {% for event in object.turn_events.all %}
+  <tr>
+    <td><a href="{% url 'atlantis:unit-detail' event.unit.unit_id%}">{{event.unit.unit_id}}</a></td> 
+    <td>{{event.event_msg}}</td>
+  </tr>
+  {% empty %}
+  <tr>
+  <td>No events</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
 {% endblock content %}

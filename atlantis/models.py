@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.urls import reverse
 
 from hexmap.models import *
 
@@ -22,7 +23,7 @@ class Attitude(models.Model):
 
 # User faction (player), connect faction to user
 class UserFaction(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE )
     faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
     war_points = models.IntegerField(null=True)
     trade_points = models.IntegerField(null=True)
@@ -60,6 +61,9 @@ class UserTurn(models.Model):
     turn = models.ForeignKey(Turn, on_delete=models.CASCADE)
     unclaimed_silver = models.IntegerField()
 
+    def get_absolute_url(self):
+        return reverse('atlantis:turn-detail', kwargs={'pk':self.pk})
+
 # User's turn forcasting
 class UserForecast(models.Model):
     user_faction = models.ForeignKey(UserFaction, on_delete=models.CASCADE)
@@ -72,7 +76,7 @@ class UserOrder(models.Model):
     turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
 
 class FactionAttitude(models.Model):
-    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
+    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE, related_name="faction_attitudes")
     faction = models.ForeignKey(Faction, on_delete=models.CASCADE)
     attitude = models.ForeignKey(Attitude, on_delete=models.CASCADE)
 
@@ -192,7 +196,7 @@ class UnitFlag(models.Model):
 
 # User turn error report
 class TurnError(models.Model):
-    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
+    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE, related_name="turn_errors")
     text = models.TextField()
     unit = models.ForeignKey(Unit, on_delete=models.CASCADE, null=True)
     error_type = models.CharField(max_length=20,blank=True)
@@ -201,7 +205,7 @@ class TurnError(models.Model):
 
 # User turn event
 class TurnEvent(models.Model):
-    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
+    user_turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE, related_name="turn_events")
     text = models.TextField()
     unit = models.ForeignKey(Unit, on_delete=models.CASCADE, null=True)
     event_msg = models.CharField(max_length=120,blank=True)

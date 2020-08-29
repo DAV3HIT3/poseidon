@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>User Turns</h2>
+  <h2>Units</h2>
   <ul>
-    {% for userturn in page_obj %}
-    <li><a href="{% url 'atlantis:turn-detail' userturn.id%}">{{userturn.turn.year}}/{{userturn.turn.month}}</a></li>
+    {% for unit in page_obj %}
+    <li><a href="{% url 'atlantis:unit-detail' unit.id%}">{{unit.unit_id}}</a></li>
     {% empty %}
-    <li>No turns available</li>
+    <li>No units</li>
     {% endfor %}
   </ul>
 
@@ -27,7 +27,6 @@
         {% endif %}
     </span>
   </div>
-  <button onclick="location.href='{% url 'report:add'%}'" type="button">Add Report</button>
 
 {% endblock content %}
 

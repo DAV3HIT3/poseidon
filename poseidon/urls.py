@@ -20,6 +20,7 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+
     path('atlantis/', include('atlantis.urls',namespace="atlantis")),
     path('reports/', include('report_parser.urls', namespace="reports")),
 
