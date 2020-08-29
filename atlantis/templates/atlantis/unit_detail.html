@@ -5,4 +5,24 @@
 
 <h3>Unit Detail </h3>
 <h4>{{object.unit_id}}</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for detail in object.unit_details.all %}
+    <tr>
+      <td>{{detail.name}}</td>
+    </tr>
+  {% empty %}
+    <tr>
+      <td>No details</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
 {% endblock content %}

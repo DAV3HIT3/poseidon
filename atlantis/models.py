@@ -145,7 +145,7 @@ class Unit(models.Model):
 
 # Unit's turn specific details
 class UnitDetail(models.Model):
-    unit = models.ForeignKey(Unit, on_delete=models.CASCADE)
+    unit = models.ForeignKey(Unit, on_delete=models.CASCADE, related_name='unit_details')
     turn = models.ForeignKey(UserTurn, on_delete=models.CASCADE)
     name = models.CharField(max_length=120)
     faction = models.ForeignKey(Faction, on_delete=models.CASCADE)

@@ -80,4 +80,6 @@ admin.site.register(Skill, SkillAdmin)
 # Unit
 admin.site.register(Unit, UnitAdmin)
 
+admin.site.register(UnitDetail)
+
 

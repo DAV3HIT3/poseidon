@@ -44,7 +44,7 @@
   <tbody>
   {% for event in object.turn_events.all %}
   <tr>
-    <td><a href="{% url 'atlantis:unit-detail' event.unit.unit_id%}">{{event.unit.unit_id}}</a></td> 
+    <td><a href="{% url 'atlantis:unit-detail' event.unit.id%}">{{event.unit.unit_id}}</a></td> 
     <td>{{event.event_msg}}</td>
   </tr>
   {% empty %}
