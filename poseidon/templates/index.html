@@ -1,4 +1,5 @@
 {% extends 'base.html'%}
+{% load static %}
 
 {% block page_header %}
 {% if user.is_authenticated %}
@@ -6,9 +7,10 @@
 {% else %}
 <h1>Hello Atlantis, Welcome to Poseidon!</h1>
 {% endif %}
-<h2>Poseidon is a web based GUI for Atlantis PBEM</h2>
+<h2>Poseidon is a web based GUI for <a href="http://atlantis-pbem.com">Atlantis PBEM</a></h2>
 {% endblock page_header %}
 
 {% block content %}
+<img class="pure-img" src="{% static 'img/Poseidon_sculpture_Copenhagen_2005.jpg' %}" alt="Poseidon Sculpture">
 
 {% endblock content %}
