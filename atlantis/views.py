@@ -4,7 +4,7 @@ from django.urls import reverse_lazy
 
 from account.mixins import LoginRequiredMixin
 
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, TemplateView
 from django.views.generic.edit import CreateView, DeleteView, UpdateView, FormView
 
 from atlantis.models import *
@@ -52,6 +52,18 @@ class UnitTurnList(LoginRequiredMixin, DetailView):
         qs = UnitDetail.objects.filter(turn__user_faction__user=self.request.user)
         return qs
 
+# -------------------------------------------------------------------------------------------
+#
+# -------------------------------------------------------------------------------------------
 class UnitTurnDetail(LoginRequiredMixin, DetailView):
     model = UnitDetail
+
+
+# -------------------------------------------------------------------------------------------
+# Main map view
+# -------------------------------------------------------------------------------------------
+class MapView(LoginRequiredMixin, TemplateView):
+    template_name = 'atlantis/map.html'
+
+
 

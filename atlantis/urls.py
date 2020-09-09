@@ -5,6 +5,8 @@ from .views import *
 
 app_name = 'atlantis'
 urlpatterns = [
+    path('map/', MapView.as_view(), name='map-view'),
+
     path('turns/', UserTurnList.as_view(), name='turn-list'),
     path('turns/<int:pk>', UserTurnDetail.as_view(), name='turn-detail'),
 

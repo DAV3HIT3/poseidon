@@ -22,6 +22,7 @@ urlpatterns = [
     path('', views.index, name='index'),
 
     path('atlantis/', include('atlantis.urls',namespace="atlantis")),
+    path('hexmap/', include('hexmap.urls',namespace="hexmap")),
     path('reports/', include('report_parser.urls', namespace="reports")),
 
     path('account/', include('account.urls')),

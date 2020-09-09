@@ -12,6 +12,20 @@ body {
     color: #777;
 }
 
+#region_map{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 2px solid blue;
+  height: 800px;
+  width: 800px;
+}
+
+.svg{
+  overflow: visible;
+}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
