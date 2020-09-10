@@ -1,0 +1,1900 @@
+Atlantis Report For:
+Crauh Skijan (119) (War 1, Trade 1, Magic 1)
+January, Year 6
+
+Atlantis Engine Version: 5.2.4 (beta)
+NewOrigins, Version: 2.0.0 (beta)
+
+Faction Status:
+Tax Regions: 3 (15)
+Trade Regions: 6 (15)
+Quartermasters: 2 (2)
+Mages: 1 (2)
+Apprentices: 0 (3)
+
+Errors during turn:
+Tyro Crauh Ditgurat (16207): BUY: Unit attempted to buy more than it
+  could afford.
+Wolf Clan (16276): BUY: Unit attempted to buy more than it could
+  afford.
+Ruby Clan (6874): MOVE: Unit is overloaded and cannot move.
+Beaver Clan (4531): BUILD: Don't have the required materials.
+Tyro Crauh Muk (16068): STUDY: Can't have another quartermaster.
+Tyro Crauh Zuhgan (16073): STUDY: Can't have another quartermaster.
+Tyro Crauh Nargol (4045): STUDY: Can't have another quartermaster.
+Beaver Clan (16145): STUDY: Can't study that.
+Tyro Crauh Borba (16167): STUDY: Can't have another quartermaster.
+Tyro Crauh Taghig (3665): STUDY: Can't have another quartermaster.
+Elder Crauh Dofang (16328): STUDY: set study goal for observation to
+  the maximum achievable level (2).
+Chieftain Crauh Gulzik (75): STUDY: Can't have another quartermaster.
+
+Events during turn:
+Times reward of 200 silver.
+Tyro Crauh Guthug (15975): Claims $89.
+Tyro Crauh Prigka (15977): Claims $89.
+Tyro Crauh Urag (15984): Claims $89.
+Tyro Crauh Dulug (16006): Claims $106.
+Tyro Crauh Rogmesh (16021): Claims $157.
+Tyro Crauh Batul (16046): Claims $157.
+Tyro Crauh Muk (16068): Claims $157.
+Tyro Crauh Zuhgan (16073): Claims $154.
+Bear Clan (16098): Claims $640.
+Tyro Crauh Bugdul (16139): Claims $96.
+Tyro Crauh Hogug (16141): Claims $86.
+Ox Clan (1297): Gives 246 grain [GRAI] to Ruby Clan (6874).
+Mustang Clan (3131): Gives 6 horses [HORS] to Ruby Clan (6874).
+Milicja (6877): Is given to your faction.
+Prospector (9360): Gives 5 yew [YEW] to Centaur congregation (8811).
+Unit (1971): Is given to your faction.
+Rabbit Clan (16327): Gives 2 axes [AXE] to Bear Clan (15957).
+Unit (5378): Is given to your faction.
+Wolf Clan (5967): Collects $944 in taxes in plain (7,15) in Elrun.
+Wolf Clan (6619): Collects $1799 in taxes in plain (7,15) in Elrun.
+Wolf Clan (13548): Collects $1150 in taxes in forest (70,26) in
+  Goldsinshaw.
+Wolf Clan (16325): Collects $788 in taxes in swamp (1,31) in
+  Tradgwern.
+Chieftain Crauh Gulzik (75): Casts Phantasmal Entertainment, raising
+  43 silver.
+Unit (7) uses earth lore [EART] in jungle (3,35) in Ecca'yrk.
+Tyro Crauh Guthug (15975): Buys gnome [GNOM] at $29 each.
+Tyro Crauh Prigka (15977): Buys gnome [GNOM] at $29 each.
+Tyro Crauh Urag (15984): Buys gnome [GNOM] at $29 each.
+Wolf Clan (2681): Buys 13 humans [HUMN] at $46 each.
+Tyro Crauh Dulug (16006): Buys human [HUMN] at $46 each.
+Wolf Clan (2681): Wolf Clan (2681) shares 2760 silver [SILV] with Wolf
+  Clan (16015).
+Wolf Clan (16015): Buys 60 humans [HUMN] at $46 each.
+Tyro Crauh Rogmesh (16021): Buys orc [ORC] at $47 each.
+Tyro Crauh Batul (16046): Buys orc [ORC] at $47 each.
+Tyro Crauh Muk (16068): Buys orc [ORC] at $47 each.
+Tyro Crauh Zuhgan (16073): Buys gnoll [GNOL] at $44 each.
+Bear Clan (16098): Buys 10 gnolls [GNOL] at $44 each.
+Tyro Crauh Bugdul (16139): Buys lizardman [LIZA] at $36 each.
+Tyro Crauh Hogug (16141): Buys goblin [GBLN] at $26 each.
+Tyro Crauh Nargol (4045): Tyro Crauh Nargol (4045) shares 37 silver
+  [SILV] with Beaver Clan (16145).
+Wolf Clan (13548): Wolf Clan (13548) shares 343 silver [SILV] with
+  Beaver Clan (16145).
+Beaver Clan (16145): Buys 5 centaurs [CTAU] at $76 each.
+Pegasus Clan (3865): Flies from tundra (5,9) in Cirmon to tundra (6,8)
+  in Pesheun.
+Pegasus Clan (3865): Flies from tundra (6,8) in Pesheun to tundra
+  (6,6) in Pesheun.
+Pegasus Clan (4319): Flies from forest (11,13) in Guacot to forest
+  (12,12) in Miciasmhurst.
+Pegasus Clan (3865): Flies from tundra (6,6) in Pesheun to tundra
+  (6,4) in Semodstun.
+Pegasus Clan (4319): Is forbidden entry to ocean (13,13) in Atlantis
+  Ocean by Water Guard (9502), Filcist (46).
+Horse Clan (17170): Rides on a road from desert (9,19) in Thesipaiss
+  to desert (9,21) in Thesipaiss.
+Horse Clan (17172): Discovers that ocean (9,23) in Atlantis Ocean is
+  ocean.
+Turtle Clan (15411): Is forbidden entry to plain (68,24) in Moffho by
+  New guards (3034), Chaos Empire (19).
+Turtle Clan (5080): Swims from ocean (71,33) in Atlantis Ocean to
+  ocean (70,34) in Atlantis Ocean.
+Fleet [1112] sails from ocean (2,34) in Atlantis Ocean to ocean (2,32)
+  in Atlantis Ocean.
+Pegasus Clan (3865): Flies from tundra (6,4) in Semodstun to ocean
+  (6,2) in Atlantis Ocean.
+Oak Clan (2725): Walks from plain (7,15) in Elrun to forest (8,14) in
+  Pahi.
+Willow Clan (6398): Walks from plain (7,15) in Elrun to forest (8,14)
+  in Pahi.
+Bear Clan (3240): Walks from plain (7,15) in Elrun to forest (8,14) in
+  Pahi.
+Turtle Clan (5080): Swims from ocean (70,34) in Atlantis Ocean to
+  ocean (69,35) in Atlantis Ocean.
+Pegasus Clan (3865): Flies from ocean (6,2) in Atlantis Ocean to ocean
+  (6,0) in Atlantis Ocean.
+Turtle Clan (5080): Swims from ocean (69,35) in Atlantis Ocean to
+  ocean (68,36) in Atlantis Ocean.
+Dolphin Clan (15417): SAIL: Can't sail that far; remaining moves
+  queued.
+Turtle Clan (5080): MOVE: Unit has insufficient movement points;
+  remaining moves queued.
+Pegasus Clan (3865): Drowns in the ocean.
+Tyro Crauh Guthug (15975): Studies observation.
+Tyro Crauh Prigka (15977): Studies observation.
+Tyro Crauh Urag (15984): Studies observation.
+Wolf Clan (2681): Studies combat.
+Tyro Crauh Dulug (16006): Studies observation.
+Wolf Clan (2681): Wolf Clan (2681) shares 600 silver [SILV] with Wolf
+  Clan (16015).
+Wolf Clan (16015): Studies combat.
+Ox Clan (1297): Produces 90 grain [GRAI] in plain (7,13) in Elrun.
+Willow Clan (4377): Produces 8 grain [GRAI] in plain (7,13) in Elrun.
+Mustang Clan (3131): Produces 20 horses [HORS] in plain (7,13) in
+  Elrun.
+Bull Clan (4378): Produces 95 livestock [LIVE] in plain (7,15) in
+  Elrun.
+Mustang Clan (9183): Produces 25 horses [HORS] in plain (7,15) in
+  Elrun.
+Elder Crauh Jukha (6250): Earns 15 silver working in plain (7,15) in
+  Elrun.
+Thunder Clan (9731): Earns 755 silver working in plain (7,15) in
+  Elrun.
+Ruby Clan (2722): Earns 60 silver working in plain (7,15) in Elrun.
+Milicja (6877): Earns 90 silver working in plain (7,15) in Elrun.
+Tyro Crauh Rogmesh (16021): Studies quartermaster.
+Tyro Crauh Batul (16046): Studies quartermaster.
+Bear Clan (16098): Studies lumberjack.
+Tyro Crauh Bugdul (16139): Studies observation.
+Tyro Crauh Hogug (16141): Studies observation.
+Wolf Clan (13548): Wolf Clan (13548) shares 50 silver [SILV] with
+  Dolphin Clan (16152).
+Dolphin Clan (16152): Studies shipbuilding.
+Bear Clan (10387): Bear Clan (10387) shares 3 wood [WOOD] with Rabbit
+  Clan (9353).
+Rabbit Clan (9353): Produces 3 longbows [LBOW] in forest (70,26) in
+  Goldsinshaw.
+Ox Clan (11105): Produces 14 livestock [LIVE] in forest (70,26) in
+  Goldsinshaw.
+Ox Clan (11687): Produces 15 livestock [LIVE] in forest (70,26) in
+  Goldsinshaw.
+Bear Clan (10387): Produces 9 wood [WOOD] in forest (70,26) in
+  Goldsinshaw.
+Bear Clan (10699): Produces 10 wood [WOOD] in forest (70,26) in
+  Goldsinshaw.
+Bear Clan (16392): Produces 3 wood [WOOD] in forest (70,26) in
+  Goldsinshaw.
+Thunder Clan (11420): Produces 15 furs [FUR] in forest (70,26) in
+  Goldsinshaw.
+Prospector (9360): Produces 5 yew [YEW] in forest (70,26) in
+  Goldsinshaw.
+Wolf Clan (16325): Wolf Clan (16325) shares 200 silver [SILV] with
+  Beaver Clan (16156).
+Beaver Clan (16156): Studies shipbuilding.
+Wolf Clan (16325): Wolf Clan (16325) shares 200 silver [SILV] with
+  Bear Clan (16157).
+Bear Clan (16157): Studies lumberjack.
+Wolf Clan (16325): Wolf Clan (16325) shares 100 silver [SILV] with Ox
+  Clan (16159).
+Ox Clan (16159): Studies farming.
+Bear Clan (15957): Bear Clan (15957) shares 2 wood [WOOD] with Dolphin
+  Clan (16326).
+Dolphin Clan (16326): Helps Beaver Clan (15958) with construction of a
+  Longship (20%) in swamp (1,31) in Tradgwern.
+Bear Clan (15957): Bear Clan (15957) shares 2 wood [WOOD] with Rabbit
+  Clan (16327).
+Bear Clan (16733): Bear Clan (16733) shares 10 wood [WOOD] with Rabbit
+  Clan (16327).
+Rabbit Clan (16327): Produces 12 longbows [LBOW] in swamp (1,31) in
+  Tradgwern.
+Beaver Clan (15958): Finishes building a Longship in swamp (1,31) in
+  Tradgwern.
+Bear Clan (15957): Produces 4 wood [WOOD] in swamp (1,31) in
+  Tradgwern.
+Bear Clan (16733): Produces 10 wood [WOOD] in swamp (1,31) in
+  Tradgwern.
+Otter Clan (4026): Earns 12 silver working in swamp (1,31) in
+  Tradgwern.
+Unit (1971): Earns 12 silver working in swamp (1,31) in Tradgwern.
+Otter Clan (2768): Earns 12 silver working in swamp (1,31) in
+  Tradgwern.
+Eagle Clan (16174): Earns 12 silver working in swamp (1,31) in
+  Tradgwern.
+Unit (5378): Earns 12 silver working in swamp (1,31) in Tradgwern.
+Elder Crauh Dofang (16328): Studies observation.
+Elder Crauh Dofang (16328): Elder Crauh Dofang (16328) shares 50
+  silver [SILV] with Mole Clan (16173).
+Mole Clan (16173): Studies quarrying.
+Rat Clan (16483): Produces 7 iron [IRON] in mountain (0,34) in
+  Qua'ill.
+Horse Clan (17173): Claims 7 silver for maintenance.
+Horse Clan (17171): Claims 9 silver for maintenance.
+Horse Clan (17172): Claims 10 silver for maintenance.
+Horse Clan (17170): Claims 10 silver for maintenance.
+Turtle Clan (15411): Claims 5 silver for maintenance.
+Bear Clan (16157): Claims 25 silver for maintenance.
+Ox Clan (16159): Claims 100 silver for maintenance.
+Tyro Crauh Borba (16167): Claims 10 silver for maintenance.
+Dolphin Clan (16326): Claims 16 silver for maintenance.
+Beaver Clan (15958): Claims 38 silver for maintenance.
+Turtle Clan (5080): Claims 37 silver for maintenance.
+
+
+Declared Attitudes (default Friendly):
+Hostile : none.
+Unfriendly : Creatures (2).
+Neutral : none.
+Friendly : Kingdom of Charles (35), The Worshipful Order of Guildsmen
+  (45), Fishmongers (9), Greyfish (43), Skalperians (24), WindMasters
+  (110), Disasters Inc (49).
+Ally : none.
+
+Unclaimed silver: 19030.
+
+ocean (6,0) in Atlantis Ocean.
+------------------------------------------------------------
+  Wages: $0.
+  Wanted: none.
+  For Sale: none.
+  Products: 37 fish [FISH].
+
+Exits:
+  Southeast : ocean (7,1) in Atlantis Ocean.
+  South : ocean (6,2) in Atlantis Ocean.
+  Southwest : ocean (5,1) in Atlantis Ocean.
+
+
+
+ocean (6,2) in Atlantis Ocean.
+------------------------------------------------------------
+  Wages: $0.
+  Wanted: none.
+  For Sale: none.
+  Products: 29 fish [FISH].
+
+Exits:
+  North : ocean (6,0) in Atlantis Ocean.
+  Northeast : ocean (7,1) in Atlantis Ocean.
+  Southeast : ocean (7,3) in Atlantis Ocean.
+  South : tundra (6,4) in Semodstun.
+  Southwest : tundra (5,3) in Cirmon.
+  Northwest : ocean (5,1) in Atlantis Ocean.
+
+
+
+tundra (6,4) in Semodstun, 1456 peasants (ice dwarves), $757.
+------------------------------------------------------------
+  Wages: $12.6 (Max: $342).
+  Wanted: none.
+  For Sale: 58 ice dwarves [IDWA] at $40, 11 leaders [LEAD] at $705.
+  Entertainment available: $38.
+  Products: 10 livestock [LIVE], 16 furs [FUR], 12 herbs [HERB].
+
+Exits:
+  North : ocean (6,2) in Atlantis Ocean.
+  Northeast : ocean (7,3) in Atlantis Ocean.
+  Southeast : plain (7,5) in Peanherg, contains Priwnjeport [town].
+  South : tundra (6,6) in Pesheun.
+  Southwest : tundra (5,5) in Cirmon, contains Uby [city].
+  Northwest : tundra (5,3) in Cirmon.
+
+
+
+tundra (6,6) in Pesheun, 1082 peasants (gnolls), $605.
+------------------------------------------------------------
+  Wages: $12.8 (Max: $296).
+  Wanted: none.
+  For Sale: 43 gnolls [GNOL] at $40, 8 leaders [LEAD] at $716.
+  Entertainment available: $27.
+  Products: 13 grain [GRAI], 17 furs [FUR], 18 herbs [HERB].
+
+Exits:
+  North : tundra (6,4) in Semodstun.
+  Northeast : plain (7,5) in Peanherg, contains Priwnjeport [town].
+  Southeast : plain (7,7) in Tantcheda.
+  South : tundra (6,8) in Pesheun, contains Zyway [city].
+  Southwest : tundra (5,7) in Cirmon.
+  Northwest : tundra (5,5) in Cirmon, contains Uby [city].
+
+
+
+tundra (6,8) in Pesheun, contains Zyway [city], 10150 peasants
+  (gnomes), $18676.
+------------------------------------------------------------
+  Wages: $19.2 (Max: $3735).
+  Wanted: 138 grain [GRAI] at $20, 108 livestock [LIVE] at $26, 164
+    fish [FISH] at $26, 34 battle axes [BAXE] at $150, 40 spinning
+    wheels [SPIN] at $96, 26 plate armor [PARM] at $464, 24 swords
+    [SWOR] at $111, 64 chocolate [CHOC] at $266, 58 cotton [COTT] at
+    $222.
+  For Sale: 44 ivory [IVOR] at $66, 65 tarot cards [TARO] at $111, 406
+    gnomes [GNOM] at $46, 81 leaders [LEAD] at $1075.
+  Entertainment available: $1035.
+  Products: 18 grain [GRAI], 14 furs [FUR], 19 herbs [HERB].
+
+Exits:
+  North : tundra (6,6) in Pesheun.
+  Northeast : plain (7,7) in Tantcheda.
+  Southeast : ocean (7,9) in Atlantis Ocean.
+  South : ocean (6,10) in Atlantis Ocean.
+  Southwest : tundra (5,9) in Cirmon.
+  Northwest : tundra (5,7) in Cirmon.
+
+- VID (8312), on guard, Skalperians (24), 60 gnomes [GNOM], 60 swords
+  [SWOR], admantium sword [ASWR], horse [HORS], glider [GLID], 2
+  mithril [MITH].
+- VID (7630), on guard, Skalperians (24), 326 gnomes [GNOM], admantium
+  sword [ASWR], 4 winged horses [WING], 2 ironwood [IRWD], 5 mithril
+  [MITH], 3 gliders [GLID], floater hide [FLOA].
+
+
+tundra (5,9) in Cirmon, 891 peasants (gnomes), $427.
+------------------------------------------------------------
+  Wages: $12.4 (Max: $238).
+  Wanted: none.
+  For Sale: 35 gnomes [GNOM] at $29, 7 leaders [LEAD] at $694.
+  Entertainment available: $19.
+  Products: 12 grain [GRAI], 18 furs [FUR], 12 herbs [HERB].
+
+Exits:
+  North : tundra (5,7) in Cirmon.
+  Northeast : tundra (6,8) in Pesheun, contains Zyway [city].
+  Southeast : ocean (6,10) in Atlantis Ocean.
+  South : ocean (5,11) in Atlantis Ocean.
+  Southwest : tundra (4,10) in Cirmon, contains Poupol [city].
+  Northwest : ocean (4,8) in Atlantis Ocean.
+
+- gajejs (10109), Skalperians (24), avoiding, behind, gnome [GNOM].
+- Unit (12766), Beastmasters (39), avoiding, behind, gnoll [GNOL].
+* Tyro Crauh Guthug (15975), Crauh Skijan (119), avoiding, behind,
+  revealing faction, holding, sharing, weightless battle spoils, gnome
+  [GNOM]. Weight: 5. Capacity: 0/0/7/0. Skills: observation [OBSE] 1
+  (30).
+* Tyro Crauh Prigka (15977), Crauh Skijan (119), avoiding, behind,
+  revealing faction, holding, sharing, weightless battle spoils, gnome
+  [GNOM]. Weight: 5. Capacity: 0/0/7/0. Skills: observation [OBSE] 1
+  (30).
+* Tyro Crauh Urag (15984), Crauh Skijan (119), avoiding, behind,
+  revealing faction, holding, sharing, weightless battle spoils, gnome
+  [GNOM]. Weight: 5. Capacity: 0/0/7/0. Skills: observation [OBSE] 1
+  (30).
+
+
+forest (12,12) in Miciasmhurst, 1932 peasants (high elves), $888.
+------------------------------------------------------------
+  Wages: $12.3 (Max: $371).
+  Wanted: none.
+  For Sale: 77 high elves [HELF] at $39, 15 leaders [LEAD] at $688.
+  Entertainment available: $52.
+  Products: 33 grain [GRAI], 40 wood [WOOD], 16 furs [FUR].
+
+Exits:
+  North : ocean (12,10) in Atlantis Ocean.
+  Northeast : ocean (13,11) in Atlantis Ocean.
+  Southeast : ocean (13,13) in Atlantis Ocean.
+  South : forest (12,14) in Miciasmhurst, contains Kishbank [town].
+  Southwest : forest (11,13) in Guacot.
+  Northwest : forest (11,11) in Miciasmhurst.
+
+- vid (926), on guard, Skalperians (24), 21 high elves [HELF].
+- labiba (3158), Skalperians (24), avoiding, behind, 11 high elves
+  [HELF], 6 bags [BAG].
+- koki (3822), Skalperians (24), avoiding, behind, 15 high elves
+  [HELF], 15 axes [AXE].
+- adas (4151), Skalperians (24), avoiding, behind, 8 high elves
+  [HELF], 8 spears [SPEA].
+- gajejs (7898), Skalperians (24), avoiding, behind, wood elf [WELF],
+  camel [CAME].
+- skatitajs (7739), Skalperians (24), avoiding, behind, high elf
+  [HELF].
+- Unit (9980), high elf [HELF].
+- Retired centaur (11718), Chaos Empire (19), avoiding, behind,
+  centaur [CTAU].
+* Pegasus Clan (4319), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, orc [ORC], winged horse [WING], 111
+  silver [SILV]. Weight: 60. Capacity: 70/70/85/0. Skills: fishing
+  [FISH] 2 (90), observation [OBSE] 1 (30).
+- A brother (10702), The monks (12), avoiding, behind, leader [LEAD],
+  sword [SWOR], mithril armor [MARM], 5 longbows [LBOW], 35 gliders
+  [GLID].
+
+
+plain (7,13) in Elrun, 3221 peasants (humans), $2898.
+------------------------------------------------------------
+  Wages: $14.5 (Max: $579).
+  Wanted: none.
+  For Sale: 128 humans [HUMN] at $46, 25 leaders [LEAD] at $812.
+  Entertainment available: $177.
+  Products: 98 grain [GRAI], 20 horses [HORS].
+
+Exits:
+  North : plain (7,11) in Elrun, contains Pronpadshire [town].
+  Northeast : forest (8,12) in Pahi.
+  Southeast : forest (8,14) in Pahi.
+  South : plain (7,15) in Elrun.
+  Southwest : plain (6,14) in Elrun.
+  Northwest : plain (6,12) in Elrun.
+
+- gajejs (1439), Skalperians (24), avoiding, behind, high elf [HELF].
+- stradnieks (1209), Skalperians (24), avoiding, behind, human [HUMN].
+* Wolf Clan (2681), Crauh Skijan (119), holding, taxing, sharing,
+  consuming unit's food, won't cross water, 60 humans [HUMN], 2864
+  silver [SILV]. Weight: 600. Capacity: 0/0/900/0. Skills: combat
+  [COMB] 1 (53).
+* Ruby Clan (6874), Crauh Skijan (119), avoiding, revealing faction,
+  holding, sharing, won't cross water, 6 gnolls [GNOL], 6 horses
+  [HORS], 11 livestock [LIVE], 301 grain [GRAI], 84 silver [SILV].
+  Weight: 2415. Capacity: 0/420/1060/0. Skills: farming [FARM] 2 (90).
+* Ox Clan (1297), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, won't cross water, 25 humans [HUMN], 25
+  bags [BAG], 90 grain [GRAI]. Weight: 725. Capacity: 0/0/375/0.
+  Skills: farming [FARM] 2 (125).
+* Willow Clan (4377), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, won't cross water, 4 high elves [HELF], 4
+  longbows [LBOW], 47 grain [GRAI]. Weight: 279. Capacity: 0/0/60/0.
+  Skills: farming [FARM] 2 (90), longbow [LBOW] 1 (30).
+* Mustang Clan (3131), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, won't cross water, 20 humans [HUMN], 70
+  horses [HORS]. Weight: 3700. Capacity: 0/4900/5200/0. Skills: horse
+  training [HORS] 2 (90).
+* Tyro Crauh Dulug (16006), Crauh Skijan (119), holding, sharing,
+  consuming unit's food, won't cross water, human [HUMN]. Weight: 10.
+  Capacity: 0/0/15/0. Skills: observation [OBSE] 1 (30).
+* Wolf Clan (16015), Crauh Skijan (119), holding, sharing, consuming
+  unit's food, won't cross water, 60 humans [HUMN]. Weight: 600.
+  Capacity: 0/0/900/0. Skills: combat [COMB] 1 (30).
+- Ls (8918), King of the Penguins (18), avoiding, behind, lizardman
+  [LIZA], glider [GLID].
+
+
+
+forest (11,13) in Guacot, 2465 peasants (wood elves), $5077.
+------------------------------------------------------------
+  Wages: $20.3 (Max: $2050).
+  Wanted: none.
+  For Sale: 98 wood elves [WELF] at $64, 19 leaders [LEAD] at $1136.
+  Entertainment available: $253.
+  Products: 47 livestock [LIVE], 40 wood [WOOD], 19 furs [FUR].
+
+Exits:
+  North : forest (11,11) in Miciasmhurst.
+  Northeast : forest (12,12) in Miciasmhurst.
+  Southeast : forest (12,14) in Miciasmhurst, contains Kishbank
+    [town].
+  South : ocean (11,15) in Atlantis Ocean.
+  Southwest : forest (10,14) in Guacot, contains Puwood [town].
+  Northwest : ocean (10,12) in Atlantis Ocean.
+
+- vid (1441), on guard, Skalperians (24), 98 wood elves [WELF], 54
+  chain armor [CARM], admantium sword [ASWR], horse [HORS], 100 camels
+  [CAME], giant turtle [TURT], magic wagon [MWAG], 8 iron [IRON], 5
+  furs [FUR], admantium [ADMT], glider [GLID].
+
+
+forest (8,14) in Pahi, 1987 peasants (high elves), $1430.
+------------------------------------------------------------
+  Wages: $13.6 (Max: $596).
+  Wanted: none.
+  For Sale: 79 high elves [HELF] at $43, 15 leaders [LEAD] at $761.
+  Entertainment available: $75.
+  Products: 27 grain [GRAI], 40 wood [WOOD], 12 furs [FUR].
+
+Exits:
+  North : forest (8,12) in Pahi.
+  Northeast : forest (9,13) in Pahi.
+  Southeast : forest (9,15) in Pahi.
+  South : forest (8,16) in Pahi.
+  Southwest : plain (7,15) in Elrun.
+  Northwest : plain (7,13) in Elrun.
+
+- vid (1759), on guard, Skalperians (24), 35 high elves [HELF],
+  mithril sword [MSWO], horse [HORS], ironwood [IRWD].
+- koki (4868), Skalperians (24), avoiding, behind, 15 high elves
+  [HELF], 15 axes [AXE].
+- ierochi (6162), Skalperians (24), avoiding, behind, 15 high elves
+  [HELF], 15 axes [AXE].
+- gajejs (11036), Skalperians (24), avoiding, behind, human [HUMN],
+  winged horse [WING].
+* Oak Clan (2725), Crauh Skijan (119), avoiding, behind, revealing
+  faction, sharing, won't cross water, 5 high elves [HELF], 8
+  livestock [LIVE]. Weight: 450. Capacity: 0/0/475/0. Skills: building
+  [BUIL] 0 (6), combat [COMB] 2 (90), farming [FARM] 2 (90).
+* Willow Clan (6398), Crauh Skijan (119), revealing faction, sharing,
+  won't cross water, 9 high elves [HELF], 7 spears [SPEA], leather
+  armor [LARM], 9 mushrooms [MUSH], 60 silver [SILV]. Weight: 98.
+  Capacity: 0/0/135/0. Skills: combat [COMB] 1 (40).
+* Bear Clan (3240), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, won't cross water, 9 gnolls [GNOL].
+  Weight: 90. Capacity: 0/0/135/0. Skills: lumberjack [LUMB] 2 (90),
+  armorer [ARMO] 2 (120).
+
+
+forest (10,14) in Guacot, contains Puwood [town], 6967 peasants
+  (centaurs), $13934.
+------------------------------------------------------------
+  Wages: $20.0 (Max: $2786).
+  Wanted: 180 grain [GRAI] at $27, 186 livestock [LIVE] at $24, 110
+    fish [FISH] at $20, 10 swords [SWOR] at $89, 12 nets [NET] at $99,
+    9 lassoes [LASS] at $89, 3 battle axes [BAXE] at $192, 9 truffles
+    [TRUF] at $222.
+  For Sale: 3 tarot cards [TARO] at $61, 278 centaurs [CTAU] at $112,
+    55 leaders [LEAD] at $1120.
+  Entertainment available: $766.
+  Products: 45 livestock [LIVE], 45 wood [WOOD], 15 furs [FUR].
+
+Exits:
+  North : ocean (10,12) in Atlantis Ocean.
+  Northeast : forest (11,13) in Guacot.
+  Southeast : ocean (11,15) in Atlantis Ocean.
+  South : ocean (10,16) in Atlantis Ocean.
+  Southwest : forest (9,15) in Pahi.
+  Northwest : forest (9,13) in Pahi.
+
+- izklaide (1447), Skalperians (24), avoiding, behind, 4 centaurs
+  [CTAU].
+- Corporal (1547), Greyfish (43), avoiding, behind, high elf [HELF].
+- vid (3163), on guard, Skalperians (24), 61 high elves [HELF], 98
+  wood elves [WELF], 24 swords [SWOR], 18 chain armor [CARM], 7 spears
+  [SPEA], giant turtle [TURT], 102 camels [CAME], 63 horses [HORS],
+  glider [GLID], 2 mithril [MITH], admantium [ADMT], wood [WOOD],
+  stone [STON].
+- Gudrais (2288), Skalperians (24), behind, wood elf [WELF].
+- koki (4152), Skalperians (24), avoiding, behind, 18 wood elves
+  [WELF], 14 axes [AXE], 50 wood [WOOD].
+- adas (4867), Skalperians (24), avoiding, behind, 8 wood elves
+  [WELF], 7 spears [SPEA].
+- lopi (5256), Skalperians (24), avoiding, behind, 18 wood elves
+  [WELF], 5 high elves [HELF].
+- skatitajs (8327), Skalperians (24), avoiding, behind, leader [LEAD],
+  camel [CAME].
+- gajejs (10113), Skalperians (24), avoiding, behind, human [HUMN].
+- vid (12103), Skalperians (24), 110 centaurs [CTAU], mithril sword
+  [MSWO], wooden shield [WSHD], 202 camels [CAME], 4 horses [HORS],
+  magic wagon [MWAG], mithril [MITH], healing potion [HPOT], 6 bags
+  [BAG].
+- Dancer (12792), Filcist (46), avoiding, behind, centaur [CTAU].
+- A monk (7868), The monks (12), avoiding, behind, centaur [CTAU].
+- Look (14676), centaur [CTAU].
+- fermeri (10043), Skalperians (24), avoiding, behind, 4 centaurs
+  [CTAU].
+- kurjers (8320), Skalperians (24), avoiding, behind, wood elf [WELF].
+- gajejs (4526), Skalperians (24), avoiding, behind, centaur [CTAU].
+- gajejs (9965), Skalperians (24), avoiding, behind, 5 high elves
+  [HELF], 4 camels [CAME], 2 magic wagons [MWAG].
+- kurjers (3157), Skalperians (24), avoiding, behind, centaur [CTAU],
+  horse [HORS].
+- lopu_kurjers (7474), Skalperians (24), avoiding, behind, wood elf
+  [WELF], 94 livestock [LIVE].
+- gajejs (11714), Skalperians (24), avoiding, behind, human [HUMN],
+  winged horse [WING].
+* Beaver Clan (4531), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, won't cross water, 10 orcs [ORC], 335 silver
+  [SILV]. Weight: 100. Capacity: 0/0/150/0. Skills: building [BUIL] 4
+  (320).
+
+
+plain (7,15) in Elrun, 2823 peasants (centaurs), $2879.
+------------------------------------------------------------
+  Wages: $15.1 (Max: $1153).
+  Wanted: none.
+  For Sale: 112 centaurs [CTAU] at $84, 22 leaders [LEAD] at $845.
+  Entertainment available: $167.
+  Products: 95 livestock [LIVE], 25 horses [HORS].
+
+Exits:
+  North : plain (7,13) in Elrun.
+  Northeast : forest (8,14) in Pahi.
+  Southeast : forest (8,16) in Pahi.
+  South : jungle (7,17) in Stydarnir.
+  Southwest : jungle (6,16) in Stydarnir.
+  Northwest : plain (6,14) in Elrun.
+
+* Elder Crauh Jukha (6250), Crauh Skijan (119), avoiding, behind,
+  sharing, weightless battle spoils, gnoll [GNOL]. Weight: 10.
+  Capacity: 0/0/15/0. Skills: observation [OBSE] 2 (90), stealth
+  [STEA] 2 (90).
+* Wolf Clan (5967), on guard, Crauh Skijan (119), revealing faction,
+  holding, taxing, sharing, won't cross water, 5 gnolls [GNOL], 16
+  high elves [HELF], leather armor [LARM], 1764 silver [SILV]. Weight:
+  211. Capacity: 0/0/315/0. Skills: combat [COMB] 1 (78), farming
+  [FARM] 0 (10), horse training [HORS] 0 (23).
+* Bull Clan (4378), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, won't cross water, 23 humans [HUMN], 28
+  lassoes [LASS], 182 livestock [LIVE]. Weight: 9358. Capacity:
+  0/0/9445/0. Skills: building [BUIL] 0 (6), combat [COMB] 0 (8),
+  farming [FARM] 4 (300).
+- pazemnieks (9975), centaur [CTAU].
+* Wolf Clan (6619), on guard, Crauh Skijan (119), revealing faction,
+  holding, taxing, sharing, won't cross water, 40 centaurs [CTAU],
+  4221 silver [SILV]. Weight: 2000. Capacity: 0/2800/2800/0. Skills:
+  combat [COMB] 1 (35).
+- Looker (14488), Anomymo (76), avoiding, behind, centaur [CTAU].
+* Mustang Clan (9183), Crauh Skijan (119), avoiding, behind, revealing
+  faction, sharing, won't cross water, 5 centaurs [CTAU], 100 horses
+  [HORS], 2 lassoes [LASS]. Weight: 5252. Capacity: 0/7350/7350/0.
+  Skills: combat [COMB] 0 (22), farming [FARM] 0 (13), horse training
+  [HORS] 5 (450).
+* Thunder Clan (9731), on guard, Crauh Skijan (119), behind, revealing
+  faction, holding, sharing, won't cross water, 50 centaurs [CTAU],
+  255 silver [SILV]. Weight: 2500. Capacity: 0/3500/3500/0. Skills:
+  riding [RIDI] 2 (150), combat [COMB] 2 (90).
+* Ruby Clan (2722), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, won't cross water, 4 centaurs [CTAU], 20
+  silver [SILV]. Weight: 200. Capacity: 0/280/280/0. Skills: riding
+  [RIDI] 2 (120).
+- gajejs (2623), Skalperians (24), avoiding, behind, 6 orcs [ORC],
+  camel [CAME].
+- gajejs (9937), Skalperians (24), avoiding, behind, human [HUMN], 4
+  wood elves [WELF], 6 magic wagons [MWAG].
+
++ Shaft [1] : Shaft, contains an inner location.
+  - gajejs (1436), Skalperians (24), avoiding, behind, high elf
+    [HELF], horse [HORS].
+  * Milicja (6877), Crauh Skijan (119), avoiding, behind, revealing
+    faction, holding, sharing, won't cross water, 6 high elves [HELF],
+    105 silver [SILV]. Weight: 60. Capacity: 0/0/90/0. Skills: combat
+    [COMB] 2 (90).
+  - gajejs (7544), Skalperians (24), avoiding, behind, 3 centaurs
+    [CTAU].
+
+
+
+jungle (7,17) in Stydarnir, 1384 peasants (lizardmen), $996.
+------------------------------------------------------------
+  Wages: $13.6 (Max: $456).
+  Wanted: none.
+  For Sale: 55 lizardmen [LIZA] at $43, 11 leaders [LEAD] at $761.
+  Entertainment available: $46.
+  Products: 23 grain [GRAI], 18 wood [WOOD], 24 herbs [HERB].
+
+Exits:
+  North : plain (7,15) in Elrun.
+  Northeast : forest (8,16) in Pahi.
+  Southeast : jungle (8,18) in Stydarnir.
+  South : jungle (7,19) in Stydarnir.
+  Southwest : jungle (6,18) in Stydarnir.
+  Northwest : jungle (6,16) in Stydarnir.
+
+- Unit (12573), Disasters Inc (49), avoiding, behind, orc [ORC], camel
+  [CAME].
+* Hawk Clan (5384), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, 4 ice dwarves [IDWA], 1854 silver [SILV].
+  Weight: 40. Capacity: 0/0/60/0. Skills: combat [COMB] 4 (420). Can
+  Study: endurance [ENDU].
+* Wolf Clan (17169), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, weightless battle spoils, 10 humans
+  [HUMN]. Weight: 100. Capacity: 0/0/150/0. Skills: combat [COMB] 1
+  (30).
+
+
+
+jungle (9,17) in Stydarnir, contains Ecaulgol [town], 5593 peasants
+  (orcs), $5369.
+------------------------------------------------------------
+  Wages: $14.8 (Max: $1073).
+  Wanted: 156 grain [GRAI] at $23, 144 livestock [LIVE] at $23, 190
+    fish [FISH] at $26, 5 picks [PICK] at $87, 3 hammers [HAMM] at
+    $105.
+  For Sale: 223 orcs [ORC] at $47, 44 leaders [LEAD] at $828.
+  Entertainment available: $324.
+  Products: 24 grain [GRAI], 14 wood [WOOD], 24 herbs [HERB].
+
+Exits:
+  North : forest (9,15) in Pahi.
+  Northeast : ocean (10,16) in Atlantis Ocean.
+  Southeast : ocean (10,18) in Atlantis Ocean.
+  South : desert (9,19) in Thesipaiss.
+  Southwest : jungle (8,18) in Stydarnir.
+  Northwest : forest (8,16) in Pahi.
+
+- gajejs (1446), Skalperians (24), avoiding, behind, centaur [CTAU],
+  orc [ORC], 11 giant turtles [TURT], 11 rootstone [ROOT].
+- Team (2907), Greyfish (43), behind, 8 orcs [ORC], 8 bags [BAG], 5
+  stone [STON].
+- Team (4871), Greyfish (43), avoiding, behind, 8 orcs [ORC], 8
+  spinning wheels [SPIN].
+- Team (5261), Greyfish (43), avoiding, behind, 8 orcs [ORC], 8 bags
+  [BAG], 24 grain [GRAI].
+- Team (6169), Greyfish (43), avoiding, behind, 7 orcs [ORC], 7 axes
+  [AXE], 14 wood [WOOD].
+- Team (6170), Greyfish (43), avoiding, behind, 10 orcs [ORC], 41 axes
+  [AXE], 413 spears [SPEA], wagon [WAGO], 3 spinning wheels [SPIN].
+- kocinieks (7057), Skalperians (24), avoiding, behind, wood elf
+  [WELF], camel [CAME].
+- Master Sergeant (1850), on guard, Greyfish (43), behind, goblin
+  [GBLN]; an old man.
+- Platoon (3918), Greyfish (43), 17 orcs [ORC], 8 swords [SWOR], 16
+  cloth armor [CLAR], leather armor [LARM], horse [HORS], 5 fish
+  [FISH].
+- Team (11155), Greyfish (43), avoiding, behind, 5 orcs [ORC], 90
+  cloth armor [CLAR].
+- Pile (11156), Greyfish (43), 100 orcs [ORC].
+- Sargs (10228), on guard, Skalperians (24), 2 humans [HUMN], 2
+  mithril swords [MSWO], 2 mithril armor [MARM], double bow [DBOW], 2
+  horses [HORS].
+- gajejs (10058), Skalperians (24), avoiding, behind, human [HUMN],
+  glider [GLID].
+- A brother (7402), The monks (12), avoiding, behind, centaur [CTAU].
+- Platoon (12387), Greyfish (43), 50 orcs [ORC], 50 spears [SPEA], 125
+  cloth armor [CLAR].
+- Lavan (11015), Skalperians (24), behind, 50 wood elves [WELF], 50
+  longbows [LBOW], double bow [DBOW], 27 camels [CAME], 5 winged
+  horses [WING], 3 mithril [MITH].
+- Dancer (11202), Filcist (46), avoiding, behind, high elf [HELF],
+  horse [HORS].
+- Look (14675), centaur [CTAU].
+- Team (3149), Greyfish (43), avoiding, behind, 7 goblins [GBLN], 7
+  axes [AXE].
+- gudrais (11997), Skalperians (24), behind, leader [LEAD], winged
+  horse [WING].
+* Tyro Crauh Rogmesh (16021), Crauh Skijan (119), avoiding, behind,
+  revealing faction, holding, sharing, weightless battle spoils, orc
+  [ORC]. Weight: 10. Capacity: 0/0/15/0. Skills: quartermaster [QUAM]
+  1 (30).
+* Tyro Crauh Batul (16046), Crauh Skijan (119), avoiding, behind,
+  revealing faction, holding, sharing, weightless battle spoils, orc
+  [ORC]. Weight: 10. Capacity: 0/0/15/0. Skills: quartermaster [QUAM]
+  1 (30).
+* Tyro Crauh Muk (16068), Crauh Skijan (119), avoiding, behind,
+  revealing faction, holding, sharing, weightless battle spoils, orc
+  [ORC], 100 silver [SILV]. Weight: 10. Capacity: 0/0/15/0. Skills:
+  none.
+- gajejs (8368), Skalperians (24), avoiding, behind, high elf [HELF],
+  7 camels [CAME], 3 horses [HORS], magic wagon [MWAG].
+
+
+desert (9,19) in Thesipaiss, 1873 peasants (goblins), $1723.
+------------------------------------------------------------
+  Wages: $14.6 (Max: $723).
+  Wanted: none.
+  For Sale: 74 goblins [GBLN] at $35, 14 leaders [LEAD] at $817.
+  Entertainment available: $84.
+  Products: 18 grain [GRAI], 17 iron [IRON], 22 stone [STON], 10
+    camels [CAME].
+
+Exits:
+  North : jungle (9,17) in Stydarnir, contains Ecaulgol [town].
+  Northeast : ocean (10,18) in Atlantis Ocean.
+  Southeast : ocean (10,20) in Atlantis Ocean.
+  South : desert (9,21) in Thesipaiss.
+  Southwest : jungle (8,20) in Stydarnir.
+  Northwest : jungle (8,18) in Stydarnir.
+
+
++ Eastwatch on the sea [1] : Tower, needs 1; The old fortress
+  Eastwatch of the Sea was now just a tower where a confused old man
+  lives with his servants..
+  - Corporal (1845), Greyfish (43), avoiding, behind, centaur [CTAU].
+
+
+swamp (6,20) in Duntu, 1623 peasants (gnolls), $1233.
+------------------------------------------------------------
+  Wages: $13.8 (Max: $535).
+  Wanted: none.
+  For Sale: 64 gnolls [GNOL] at $44, 12 leaders [LEAD] at $772.
+  Entertainment available: $59.
+  Products: 11 grain [GRAI], 25 wood [WOOD], 18 herbs [HERB].
+
+Exits:
+  North : jungle (6,18) in Stydarnir.
+  Northeast : jungle (7,19) in Stydarnir.
+  Southeast : desert (7,21) in Thesipaiss.
+  South : swamp (6,22) in Duntu.
+  Southwest : jungle (5,21) in Stydarnir, contains Vipera [city].
+  Northwest : jungle (5,19) in Stydarnir.
+
+- Unit (13248), orc [ORC].
+* Tyro Crauh Zuhgan (16073), Crauh Skijan (119), avoiding, behind,
+  revealing faction, holding, sharing, weightless battle spoils, gnoll
+  [GNOL], 100 silver [SILV]. Weight: 10. Capacity: 0/0/15/0. Skills:
+  none.
+* Bear Clan (16098), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, weightless battle spoils, 10 gnolls
+  [GNOL]. Weight: 100. Capacity: 0/0/150/0. Skills: lumberjack [LUMB]
+  1 (30).
+
+
+jungle (8,20) in Stydarnir, 1594 peasants (lizardmen), $446.
+------------------------------------------------------------
+  Wages: $11.4 (Max: $194).
+  Wanted: none.
+  For Sale: 63 lizardmen [LIZA] at $36, 12 leaders [LEAD] at $638.
+  Entertainment available: $29.
+  Products: 22 grain [GRAI], 15 wood [WOOD], 26 herbs [HERB].
+
+Exits:
+  North : jungle (8,18) in Stydarnir.
+  Northeast : desert (9,19) in Thesipaiss.
+  Southeast : desert (9,21) in Thesipaiss.
+  South : desert (8,22) in Thesipaiss.
+  Southwest : desert (7,21) in Thesipaiss.
+  Northwest : jungle (7,19) in Stydarnir.
+
+- gajejs (11035), Skalperians (24), avoiding, behind, human [HUMN],
+  camel [CAME].
+* Tyro Crauh Bugdul (16139), Crauh Skijan (119), avoiding, behind,
+  revealing faction, holding, sharing, weightless battle spoils,
+  lizardman [LIZA]. Weight: 10. Capacity: 0/0/15/15. Skills:
+  observation [OBSE] 1 (30).
+
+
+jungle (5,21) in Stydarnir, contains Vipera [city], 12189 peasants
+  (orcs), $30716.
+------------------------------------------------------------
+  Wages: $22.6 (Max: $6143).
+  Wanted: 148 grain [GRAI] at $21, 118 livestock [LIVE] at $21, 168
+    fish [FISH] at $27, 27 pikes [PIKE] at $150, 31 chain armor [CARM]
+    at $89, 32 battle axes [BAXE] at $161, 40 picks [PICK] at $122, 41
+    leather armor [LARM] at $89, 68 caviar [CAVI] at $309, 92 gems
+    [GEM] at $462.
+  For Sale: 68 wine [WINE] at $96, 59 spices [SPIC] at $66, 487 orcs
+    [ORC] at $72, 97 leaders [LEAD] at $1265.
+  Entertainment available: $2278.
+  Products: 29 livestock [LIVE], 23 wood [WOOD], 20 herbs [HERB].
+
+Exits:
+  North : jungle (5,19) in Stydarnir.
+  Northeast : swamp (6,20) in Duntu.
+  Southeast : swamp (6,22) in Duntu.
+  South : ocean (5,23) in Atlantis Ocean.
+  Southwest : ocean (4,22) in Atlantis Ocean.
+  Northwest : ocean (4,20) in Atlantis Ocean.
+
+- ambassador (2058), Skalperians (24), avoiding, behind, orc [ORC].
+- Sergeant (1153), Greyfish (43), avoiding, behind, orc [ORC].
+- Ambassador (3399), Filcist (46), avoiding, behind, centaur [CTAU].
+- Look (14677), centaur [CTAU].
+- The Bill (13188), Disasters Inc (49), 50 orcs [ORC], 55 swords
+  [SWOR], 123 iron shields [ISHD], 21 horses [HORS]; of the
+  consultancy.
+- The Bill (13234), Disasters Inc (49), behind, 50 orcs [ORC], 108
+  longbows [LBOW], 5 magic wagons [MWAG]; of the consultancy.
+- Unit (6641), Kingdom of Charles (35), avoiding, behind, 3 orcs
+  [ORC].
+- Unit (12651), Disasters Inc (49), behind, orc [ORC].
+* Horse Clan (17173), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, weightless battle spoils, human [HUMN],
+  horse [HORS]. Weight: 60. Capacity: 0/70/85/0. Skills: riding [RIDI]
+  1 (40).
+- Collections (13148), orc [ORC], camel [CAME].
+- The Bill (12247), Disasters Inc (49), 40 orcs [ORC], 40 swords
+  [SWOR], 30 horses [HORS]; for services rendered.
+- The Bill (12259), Disasters Inc (49), behind, 40 orcs [ORC], 40
+  longbows [LBOW], 3 magic wagons [MWAG]; for services rendered.
+
+
+desert (7,21) in Thesipaiss, 1208 peasants (goblins), $241.
+------------------------------------------------------------
+  Wages: $11.0 (Max: $114).
+  Wanted: none.
+  For Sale: 48 goblins [GBLN] at $26, 9 leaders [LEAD] at $616.
+  Entertainment available: $16.
+  Products: 15 grain [GRAI], 12 iron [IRON], 17 stone [STON], 14
+    camels [CAME].
+
+Exits:
+  North : jungle (7,19) in Stydarnir.
+  Northeast : jungle (8,20) in Stydarnir.
+  Southeast : desert (8,22) in Thesipaiss.
+  South : desert (7,23) in Thesipaiss.
+  Southwest : swamp (6,22) in Duntu.
+  Northwest : swamp (6,20) in Duntu.
+
+- gajejs (11046), Skalperians (24), avoiding, behind, human [HUMN].
+* Horse Clan (17171), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, weightless battle spoils, human [HUMN],
+  horse [HORS]. Weight: 60. Capacity: 0/70/85/0. Skills: riding [RIDI]
+  1 (35).
+* Tyro Crauh Hogug (16141), Crauh Skijan (119), avoiding, behind,
+  revealing faction, holding, sharing, weightless battle spoils,
+  goblin [GBLN]. Weight: 5. Capacity: 0/0/7/0. Skills: observation
+  [OBSE] 1 (30).
+- Collections (13163), Disasters Inc (49), avoiding, behind, 2 orcs
+  [ORC], 2 camels [CAME].
+- peldetajs (2200), Skalperians (24), avoiding, behind, lizardman
+  [LIZA], glider [GLID].
+
+
+desert (9,21) in Thesipaiss, 1565 peasants (gnolls), $1189.
+------------------------------------------------------------
+  Wages: $13.8 (Max: $519).
+  Wanted: none.
+  For Sale: 62 gnolls [GNOL] at $44, 12 leaders [LEAD] at $772.
+  Entertainment available: $57.
+  Products: 17 grain [GRAI], 13 iron [IRON], 19 stone [STON], 13
+    camels [CAME].
+
+Exits:
+  North : desert (9,19) in Thesipaiss.
+  Northeast : ocean (10,20) in Atlantis Ocean.
+  Southeast : ocean (10,22) in Atlantis Ocean.
+  South : ocean (9,23) in Atlantis Ocean.
+  Southwest : desert (8,22) in Thesipaiss.
+  Northwest : jungle (8,20) in Stydarnir.
+
+- vid (1769), on guard, Skalperians (24), 12 gnolls [GNOL].
+- graudi (2291), Greyfish (43), avoiding, behind, 9 gnolls [GNOL].
+- dzelzs (2596), Greyfish (43), avoiding, behind, 6 gnolls [GNOL], 6
+  picks [PICK].
+- ierochi (2909), Greyfish (43), avoiding, behind, 6 gnolls [GNOL], 6
+  hammers [HAMM], 86 chain armor [CARM], 13 iron [IRON].
+- kamieli (3164), Greyfish (43), avoiding, behind, 5 gnolls [GNOL], 72
+  camels [CAME].
+- akmeni (3493), Greyfish (43), avoiding, behind, 9 gnolls [GNOL], 9
+  picks [PICK].
+- Corporal (7588), Greyfish (43), goblin [GBLN].
+- gajejs (1438), Skalperians (24), avoiding, behind, high elf [HELF],
+  horse [HORS].
+- Team (9302), Greyfish (43), avoiding, behind, 2 gnolls [GNOL].
+- Team (876), Greyfish (43), avoiding, behind, 2 orcs [ORC].
+* Horse Clan (17172), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, weightless battle spoils, human [HUMN],
+  horse [HORS]. Weight: 60. Capacity: 0/70/85/0. Skills: riding [RIDI]
+  1 (45).
+* Horse Clan (17170), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, weightless battle spoils, human [HUMN],
+  horse [HORS]. Weight: 60. Capacity: 0/70/85/0. Skills: riding [RIDI]
+  1 (45).
+
+
+ocean (69,25) in Atlantis Ocean.
+------------------------------------------------------------
+  Wages: $0.
+  Wanted: none.
+  For Sale: none.
+  Products: 28 fish [FISH].
+
+Exits:
+  North : ocean (69,23) in Atlantis Ocean.
+  Northeast : ocean (70,24) in Atlantis Ocean.
+  Southeast : forest (70,26) in Goldsinshaw.
+  South : ocean (69,27) in Atlantis Ocean.
+  Southwest : ocean (68,26) in Atlantis Ocean.
+  Northwest : plain (68,24) in Moffho.
+
+* Turtle Clan (15411), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, orc [ORC], giant turtle [TURT]. Weight: 110.
+  Capacity: 0/0/115/115. Skills: combat [COMB] 1 (30), observation
+  [OBSE] 1 (30).
+
+
+forest (70,26) in Goldsinshaw, 2493 peasants (centaurs), $1844.
+------------------------------------------------------------
+  Wages: $13.7 (Max: $744).
+  Wanted: none.
+  For Sale: 99 centaurs [CTAU] at $76, 19 leaders [LEAD] at $767.
+  Entertainment available: $106.
+  Products: 29 livestock [LIVE], 22 wood [WOOD], 19 furs [FUR], 5 yew
+    [YEW].
+
+Exits:
+  North : ocean (70,24) in Atlantis Ocean.
+  Northeast : ocean (71,25) in Atlantis Ocean.
+  Southeast : ocean (71,27) in Atlantis Ocean.
+  South : ocean (70,28) in Atlantis Ocean.
+  Southwest : ocean (69,27) in Atlantis Ocean.
+  Northwest : ocean (69,25) in Atlantis Ocean.
+
+- Ranger (4556), Dark League (28), avoiding, behind, centaur [CTAU].
+- Centaur congregation (8811), on guard, Kingdom of Charles (35), 26
+  centaurs [CTAU], 34 swords [SWOR], 15 longbows [LBOW], 4 magic
+  wagons [MWAG], 3 rootstone [ROOT], 9 mithril [MITH], 243 wood
+  [WOOD], 35 yew [YEW], 75 furs [FUR]; Converting Goldsinshaw island.
+* Bear Clan (10387), Crauh Skijan (119), behind, revealing faction,
+  holding, sharing, consuming faction's food, won't cross water, 5
+  centaurs [CTAU], 5 axes [AXE], 23 wood [WOOD]. Weight: 370.
+  Capacity: 0/350/350/0. Skills: lumberjack [LUMB] 3 (190).
+* Rabbit Clan (9353), Crauh Skijan (119), behind, revealing faction,
+  sharing, consuming faction's food, won't cross water, orc [ORC], 4
+  axes [AXE], 4 spears [SPEA], 6 longbows [LBOW]. Weight: 24.
+  Capacity: 0/0/15/0. Skills: weaponsmith [WEAP] 2 (90), combat [COMB]
+  1 (30), observation [OBSE] 1 (55), entertainment [ENTE] 1 (30).
+* Prospector (9360), Crauh Skijan (119), behind, revealing faction,
+  sharing, consuming faction's food, won't cross water, orc [ORC], 5
+  yew [YEW]. Weight: 35. Capacity: 0/0/15/0. Skills: lumberjack [LUMB]
+  5 (450).
+* Bear Clan (10699), Crauh Skijan (119), behind, revealing faction,
+  holding, sharing, consuming faction's food, won't cross water, 5
+  centaurs [CTAU], 5 axes [AXE], 34 wood [WOOD]. Weight: 425.
+  Capacity: 0/350/350/0. Skills: lumberjack [LUMB] 3 (235).
+* Ox Clan (11105), Crauh Skijan (119), behind, revealing faction,
+  holding, sharing, consuming faction's food, won't cross water, 5
+  centaurs [CTAU]. Weight: 250. Capacity: 0/350/350/0. Skills: farming
+  [FARM] 3 (205).
+* Thunder Clan (11420), Crauh Skijan (119), behind, revealing faction,
+  holding, sharing, consuming faction's food, won't cross water, 5
+  centaurs [CTAU], 5 spears [SPEA], 45 furs [FUR]. Weight: 300.
+  Capacity: 0/350/350/0. Skills: hunting [HUNT] 2 (90).
+- Priest (11421), Kingdom of Charles (35), behind, centaur [CTAU].
+* Tyro Crauh Nargol (4045), Crauh Skijan (119), avoiding, behind,
+  revealing faction, holding, sharing, centaur [CTAU]. Weight: 50.
+  Capacity: 0/70/70/0. Skills: none.
+* Ox Clan (11687), Crauh Skijan (119), behind, revealing faction,
+  holding, sharing, consuming faction's food, won't cross water, 5
+  centaurs [CTAU], 23 livestock [LIVE]. Weight: 1400. Capacity:
+  0/350/1500/0. Skills: farming [FARM] 3 (215).
+- transit (4260), Beastmasters (39), avoiding, behind, orc [ORC],
+  giant turtle [TURT].
+- gajejs (8149), Skalperians (24), avoiding, behind, centaur [CTAU].
+* Wolf Clan (13548), on guard, Crauh Skijan (119), revealing faction,
+  taxing, sharing, consuming faction's food, won't cross water, 23
+  hill dwarves [HDWA], 932 silver [SILV]. Weight: 230. Capacity:
+  0/0/345/0. Skills: combat [COMB] 2 (90); Loyal followers of Holy
+  Cone.
+- Fisherman (2870), Kingdom of Charles (35), avoiding, behind, high
+  elf [HELF].
+* Bear Clan (16392), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, 5 centaurs [CTAU], 3 wood [WOOD]. Weight: 265.
+  Capacity: 0/350/350/0. Skills: lumberjack [LUMB] 1 (35).
+- Unit (13306), lizardman [LIZA], glider [GLID].
+* Beaver Clan (16145), Crauh Skijan (119), revealing faction, sharing,
+  consuming faction's food, won't cross water, 5 centaurs [CTAU].
+  Weight: 250. Capacity: 0/350/350/0. Skills: none.
+* Dolphin Clan (16152), Crauh Skijan (119), revealing faction,
+  sharing, consuming faction's food, won't cross water, 5 centaurs
+  [CTAU]. Weight: 250. Capacity: 0/350/350/0. Skills: shipbuilding
+  [SHIP] 1 (30).
+
+
+swamp (1,31) in Tradgwern, 1651 peasants (orcs), $792.
+------------------------------------------------------------
+  Wages: $12.4 (Max: $342).
+  Wanted: none.
+  For Sale: 66 orcs [ORC] at $39, 13 leaders [LEAD] at $694.
+  Entertainment available: $43.
+  Products: 15 livestock [LIVE], 14 wood [WOOD], 13 herbs [HERB].
+
+Exits:
+  North : ocean (1,29) in Atlantis Ocean.
+  Northeast : ocean (2,30) in Atlantis Ocean.
+  Southeast : ocean (2,32) in Atlantis Ocean.
+  South : ocean (1,33) in Atlantis Ocean.
+  Southwest : ocean (0,32) in Atlantis Ocean.
+  Northwest : ocean (0,30) in Atlantis Ocean.
+
+- Missionaries (6233), on guard, Kingdom of Charles (35), goblin
+  [GBLN], 7 orcs [ORC]; explaining locals the intricacies of Cone in
+  orcish language.
+- gajejs (8188), Skalperians (24), avoiding, behind, orc [ORC].
+* Otter Clan (4026), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, consuming faction's food, gnoll [GNOL].
+  Weight: 10. Capacity: 0/0/15/0. Skills: fishing [FISH] 3 (290),
+  stealth [STEA] 1 (30).
+* Unit (1971), Crauh Skijan (119), avoiding, behind, revealing
+  faction, sharing, orc [ORC]. Weight: 10. Capacity: 0/0/15/0. Skills:
+  sailing [SAIL] 2 (90), observation [OBSE] 2 (90), riding [RIDI] 2
+  (90), stealth [STEA] 1 (30).
+* Otter Clan (2768), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, consuming faction's food, won't cross
+  water, weightless battle spoils, wood elf [WELF]. Weight: 10.
+  Capacity: 0/0/15/0. Skills: fishing [FISH] 4 (405).
+* Bear Clan (15957), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, won't cross water, 5 orcs [ORC], 5 axes
+  [AXE], 4 wood [WOOD]. Weight: 75. Capacity: 0/0/75/0. Skills:
+  lumberjack [LUMB] 1 (81).
+* Wolf Clan (16325), on guard, Crauh Skijan (119), behind, revealing
+  faction, holding, taxing, sharing, won't cross water, 20 orcs [ORC].
+  Weight: 200. Capacity: 0/0/300/0. Skills: combat [COMB] 1 (30).
+* Rabbit Clan (16327), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, won't cross water, 5 orcs [ORC], 22 axes [AXE], 12
+  longbows [LBOW]. Weight: 84. Capacity: 0/0/75/0. Skills: weaponsmith
+  [WEAP] 2 (90), combat [COMB] 1 (30).
+* Bear Clan (16733), Crauh Skijan (119), behind, revealing faction,
+  holding, sharing, won't cross water, 10 orcs [ORC], 10 axes [AXE],
+  10 wood [WOOD]. Weight: 160. Capacity: 0/0/150/0. Skills: lumberjack
+  [LUMB] 1 (55); Skilled Lumberjacks.
+* Eagle Clan (16174), Crauh Skijan (119), behind, revealing faction,
+  holding, won't cross water, orc [ORC]. Weight: 10. Capacity:
+  0/0/15/0. Skills: combat [COMB] 1 (30), observation [OBSE] 1 (35).
+* Unit (5378), Crauh Skijan (119), avoiding, behind, revealing
+  faction, sharing, weightless battle spoils, gnoll [GNOL], winged
+  horse [WING]. Weight: 60. Capacity: 70/70/85/0. Skills: hunting
+  [HUNT] 5 (450).
+* Beaver Clan (16156), Crauh Skijan (119), behind, revealing faction,
+  holding, sharing, won't cross water, 20 orcs [ORC]. Weight: 200.
+  Capacity: 0/0/300/0. Skills: shipbuilding [SHIP] 1 (30).
+* Bear Clan (16157), Crauh Skijan (119), behind, revealing faction,
+  holding, sharing, won't cross water, 20 orcs [ORC]. Weight: 200.
+  Capacity: 0/0/300/0. Skills: lumberjack [LUMB] 1 (30).
+* Ox Clan (16159), Crauh Skijan (119), behind, revealing faction,
+  holding, sharing, won't cross water, 10 orcs [ORC]. Weight: 100.
+  Capacity: 0/0/150/0. Skills: farming [FARM] 1 (30).
+* Tyro Crauh Borba (16167), Crauh Skijan (119), behind, revealing
+  faction, holding, sharing, won't cross water, orc [ORC]. Weight: 10.
+  Capacity: 0/0/15/0. Skills: none.
+
++ Fleet [1157] : Raft; Load: 20/300; Sailors: 4/2; MaxSpeed: 2.
+  * Dolphin Clan (16326), Crauh Skijan (119), avoiding, behind,
+    revealing faction, holding, won't cross water, 2 orcs [ORC].
+    Weight: 20. Capacity: 0/0/30/0. Skills: sailing [SAIL] 2 (90),
+    combat [COMB] 1 (30), shipbuilding [SHIP] 1 (65), observation
+    [OBSE] 1 (35).
+
++ Ship [1237] : Longship; Load: 50/100; Sailors: 0/4; MaxSpeed: 0.
+  * Beaver Clan (15958), Crauh Skijan (119), avoiding, behind,
+    revealing faction, holding, 5 orcs [ORC]. Weight: 50. Capacity:
+    0/0/75/0. Skills: shipbuilding [SHIP] 2 (115), combat [COMB] 1
+    (30).
+
+
+ocean (2,32) in Atlantis Ocean.
+------------------------------------------------------------
+  Wages: $0.
+  Wanted: none.
+  For Sale: none.
+  Products: 32 fish [FISH].
+
+Exits:
+  North : ocean (2,30) in Atlantis Ocean.
+  Northeast : ocean (3,31) in Atlantis Ocean.
+  Southeast : swamp (3,33) in Tradgwern.
+  South : ocean (2,34) in Atlantis Ocean.
+  Southwest : ocean (1,33) in Atlantis Ocean.
+  Northwest : swamp (1,31) in Tradgwern.
+
+
++ Fleet [1112] : Raft; Load: 20/300; Sailors: 4/2; MaxSpeed: 2.
+  * Dolphin Clan (15417), Crauh Skijan (119), behind, revealing
+    faction, holding, 2 orcs [ORC], 27 silver [SILV]. Weight: 20.
+    Capacity: 0/0/30/0. Skills: sailing [SAIL] 2 (90).
+
+
+ocean (71,33) in Atlantis Ocean.
+------------------------------------------------------------
+  Wages: $0.
+  Wanted: none.
+  For Sale: none.
+  Products: 23 fish [FISH].
+
+Exits:
+  North : ocean (71,31) in Atlantis Ocean.
+  Northeast : ocean (0,32) in Atlantis Ocean.
+  Southeast : mountain (0,34) in Qua'ill, contains Faknean [town].
+  South : plain (71,35) in Swoombach.
+  Southwest : ocean (70,34) in Atlantis Ocean.
+  Northwest : ocean (70,32) in Atlantis Ocean.
+
+
+
+mountain (0,34) in Qua'ill, contains Faknean [town], 8956 peasants
+  (orcs), $16120.
+------------------------------------------------------------
+  Wages: $19.0 (Max: $3224).
+  Wanted: 196 grain [GRAI] at $25, 194 livestock [LIVE] at $18, 122
+    fish [FISH] at $25, 16 nets [NET] at $90, 16 leather armor [LARM]
+    at $75, 11 crossbows [XBOW] at $89, 10 longbows [LBOW] at $119, 30
+    ivory [IVOR] at $267, 10 spices [SPIC] at $256.
+  For Sale: 25 wine [WINE] at $79, 5 cotton [COTT] at $84, 358 orcs
+    [ORC] at $60, 71 leaders [LEAD] at $1064.
+  Entertainment available: $895.
+  Products: 26 livestock [LIVE], 52 iron [IRON], 16 stone [STON].
+
+Exits:
+  North : ocean (0,32) in Atlantis Ocean.
+  Northeast : ocean (1,33) in Atlantis Ocean.
+  Southeast : mountain (1,35) in Qua'ill.
+  South : plain (0,36) in Swoombach.
+  Southwest : plain (71,35) in Swoombach.
+  Northwest : ocean (71,33) in Atlantis Ocean.
+
+- Nekojin Ambassador (1613), Nekojin Empire (48), avoiding, behind, 2
+  high elves [HELF].
+- Herald (1771), Dark League (28), avoiding, behind, 2 high elves
+  [HELF]; Peace ambassador.
+* Tyro Crauh Taghig (3665), Crauh Skijan (119), avoiding, behind,
+  revealing faction, receiving no aid, orc [ORC]. Weight: 10.
+  Capacity: 0/0/15/0. Skills: entertainment [ENTE] 1 (30).
+- Guild Peacekeepers (4668), on guard, Kingdom of Charles (35), 96
+  orcs [ORC], double bow [DBOW], 5 mithril swords [MSWO], 58 chain
+  armor [CARM], 5 wooden shields [WSHD], 60 swords [SWOR], 2 leather
+  armor [LARM], cloth armor [CLAR], horse [HORS], 2 camels [CAME],
+  magic wagon [MWAG], 3 rootstone [ROOT], 4 iron [IRON], 5 gliders
+  [GLID], stone [STON].
+- gajejs (4873), Skalperians (24), avoiding, behind, orc [ORC].
+- The Alanis Guild of Ironhewers (6308), The Worshipful Order of
+  Guildsmen (45), avoiding, behind, 18 orcs [ORC], 21 picks [PICK], 45
+  iron [IRON].
+- The Stoic Order of Stonesmiths (6307), The Worshipful Order of
+  Guildsmen (45), avoiding, behind, 8 orcs [ORC], 8 picks [PICK], 16
+  stone [STON].
+- The Pious Order of Weaponsmiths (3598), The Worshipful Order of
+  Guildsmen (45), avoiding, behind, 18 orcs [ORC], 16 hammers [HAMM],
+  25 picks [PICK], 1092 swords [SWOR].
+- Guild Representative (8085), The Worshipful Order of Guildsmen (45),
+  avoiding, behind, orc [ORC], 985 horses [HORS], 4 magic wagons
+  [MWAG], 28 wagons [WAGO], floater hide [FLOA], 5 admantium [ADMT],
+  25 iron [IRON].
+- The Bountiful Society of Grainsmiths (8539), The Worshipful Order of
+  Guildsmen (45), avoiding, behind, 26 orcs [ORC], 26 livestock
+  [LIVE].
+- Cartographerer (8640), Gray Ones (16), avoiding, behind, high elf
+  [HELF].
+- Reinforcements (11717), Kingdom of Charles (35), 50 orcs [ORC],
+  leather armor [LARM], 3 mithril swords [MSWO], 50 chain armor
+  [CARM], 45 swords [SWOR], camel [CAME], rootstone [ROOT], iron
+  [IRON], 2 gliders [GLID], fur [FUR], stone [STON].
+- The Pious Order of Weaponsmiths (11491), The Worshipful Order of
+  Guildsmen (45), avoiding, behind, 20 goblins [GBLN].
+- Reinforcements (12346), Kingdom of Charles (35), 149 orcs [ORC], 4
+  double bows [DBOW], magic crossbow [MXBO], 11 mithril swords [MSWO],
+  2 leather armor [LARM], cloth armor [CLAR], horse [HORS], 2 camels
+  [CAME], 4 rootstone [ROOT], wood [WOOD], iron [IRON], glider [GLID],
+  2 furs [FUR], stone [STON].
+- Workforce (4382), The Worshipful Order of Guildsmen (45), avoiding,
+  behind, 24 gnolls [GNOL], 414 plate armor [PARM].
+- The Noble Order of Armoursmiths (12785), The Worshipful Order of
+  Guildsmen (45), avoiding, behind, 30 gnolls [GNOL].
+- Reinforcements (13511), Kingdom of Charles (35), 150 orcs [ORC], 4
+  double bows [DBOW], 2 magic crossbows [MXBO], 2 mithril swords
+  [MSWO], 2 cloth armor [CLAR], 2 camels [CAME], magic wagon [MWAG],
+  wood [WOOD], 3 gliders [GLID], fur [FUR].
+- Reinforcements (13715), Kingdom of Charles (35), 19 high elves
+  [HELF], leather armor [LARM], 2 giant turtles [TURT], 7 winged
+  horses [WING].
+- Unit (11473), Gray Ones (16), avoiding, behind, orc [ORC].
+- Alanis Improvement Squad (10458), The Worshipful Order of Guildsmen
+  (45), avoiding, behind, 6 orcs [ORC], 6 picks [PICK].
+* Elder Crauh Dofang (16328), Crauh Skijan (119), avoiding, behind,
+  revealing faction, holding, sharing, orc [ORC], 910 silver [SILV].
+  Weight: 10. Capacity: 0/0/15/0. Skills: combat [COMB] 3 (210),
+  observation [OBSE] 1 (60). Can Study: endurance [ENDU].
+- Guild Caravan (10459), The Worshipful Order of Guildsmen (45),
+  avoiding, behind, high elf [HELF], 15 horses [HORS], 15 wagons
+  [WAGO], 11 lassoes [LASS].
+* Rat Clan (16483), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, won't cross water, 5 orcs [ORC], 28 iron [IRON].
+  Weight: 190. Capacity: 0/0/75/0. Skills: mining [MINI] 2 (110).
+- Unit (2637), Skalperians (24), avoiding, behind, lizardman [LIZA],
+  giant turtle [TURT].
+- Unit (15087), Kingdom of Charles (35), avoiding, high elf [HELF], 4
+  winged horses [WING].
+* Mole Clan (16173), Crauh Skijan (119), avoiding, behind, revealing
+  faction, holding, sharing, 5 orcs [ORC]. Weight: 50. Capacity:
+  0/0/75/0. Skills: quarrying [QUAR] 1 (30).
+- Guild Caravan (13140), The Worshipful Order of Guildsmen (45),
+  avoiding, behind, orc [ORC], 66 livestock [LIVE].
+- Guild Caravan (1157), The Worshipful Order of Guildsmen (45),
+  avoiding, behind, orc [ORC], 76 livestock [LIVE].
+- Guild Caravan (7214), The Worshipful Order of Guildsmen (45),
+  avoiding, behind, high elf [HELF], 5 horses [HORS], 5 wagons [WAGO],
+  84 grain [GRAI].
+
+
+
+ocean (2,34) in Atlantis Ocean.
+------------------------------------------------------------
+  Wages: $0.
+  Wanted: none.
+  For Sale: none.
+  Products: 30 fish [FISH].
+
+Exits:
+  North : ocean (2,32) in Atlantis Ocean.
+  Northeast : swamp (3,33) in Tradgwern.
+  Southeast : jungle (3,35) in Ecca'yrk.
+  South : ocean (2,36) in Atlantis Ocean.
+  Southwest : mountain (1,35) in Qua'ill.
+  Northwest : ocean (1,33) in Atlantis Ocean.
+
+
+
+ocean (70,34) in Atlantis Ocean.
+------------------------------------------------------------
+  Wages: $0.
+  Wanted: none.
+  For Sale: none.
+  Products: 32 fish [FISH].
+
+Exits:
+  North : ocean (70,32) in Atlantis Ocean.
+  Northeast : ocean (71,33) in Atlantis Ocean.
+  Southeast : plain (71,35) in Swoombach.
+  South : ocean (70,36) in Atlantis Ocean.
+  Southwest : ocean (69,35) in Atlantis Ocean.
+  Northwest : ocean (69,33) in Atlantis Ocean.
+
+
+
+jungle (3,35) in Ecca'yrk, 1340 peasants (orcs), $938.
+------------------------------------------------------------
+  Wages: $13.5 (Max: $433).
+  Wanted: none.
+  For Sale: 53 orcs [ORC] at $43, 10 leaders [LEAD] at $756.
+  Entertainment available: $43.
+  Products: 24 livestock [LIVE], 17 wood [WOOD], 36 herbs [HERB].
+
+Exits:
+  North : swamp (3,33) in Tradgwern.
+  Northeast : swamp (4,34) in Tradgwern.
+  Southeast : jungle (4,36) in Ecca'yrk.
+  South : jungle (3,37) in Ecca'yrk.
+  Southwest : ocean (2,36) in Atlantis Ocean.
+  Northwest : ocean (2,34) in Atlantis Ocean.
+
+- Master Sergeant (8503), on guard, Greyfish (43), behind, lizardman
+  [LIZA].
+- Worker (13530), WindMasters (110), 5 orcs [ORC], 5 axes [AXE], 4
+  cloth armor [CLAR], 5 wooden shields [WSHD], 5 mithril swords
+  [MSWO].
+- Master (13733), WindMasters (110), behind, orc [ORC], axe [AXE], 4
+  wooden shields [WSHD], 3 wood [WOOD].
+- Worker (13734), WindMasters (110), orc [ORC], axe [AXE].
+- Lumberjack (13735), WindMasters (110), behind, 6 orcs [ORC], 6 axes
+  [AXE], 65 wood [WOOD].
+- Unit (14304), WindMasters (110), behind, leader [LEAD], cloth armor
+  [CLAR], mithril sword [MSWO].
+- Farmer (14306), WindMasters (110), behind, 8 orcs [ORC], 8 lassoes
+  [LASS].
+- Herbalist (14308), WindMasters (110), behind, 2 lizardmen [LIZA], 2
+  bags [BAG].
+- Master (14555), WindMasters (110), behind, 3 goblins [GBLN], 20 axes
+  [AXE], hammer [HAMM], 2 iron [IRON].
+- Armorer (15943), WindMasters (110), behind, 3 gnolls [GNOL], 9 cloth
+  armor [CLAR].
+- Worker (17144), WindMasters (110), 5 orcs [ORC].
+- Sailor (16719), WindMasters (110), 2 lizardmen [LIZA], 2 wooden
+  shields [WSHD], 2 axes [AXE].
+- Sailor (14853), WindMasters (110), 2 lizardmen [LIZA], 2 wooden
+  shields [WSHD].
+- Quaskar (271), Sailors Guild (123), leader [LEAD].
+- Unit (14976), WindMasters (110), leader [LEAD].
+- Prukmog (16305), Sailors Guild (123), avoiding, behind, orc [ORC].
+- Burgimb (16352), Sailors Guild (123), avoiding, behind, orc [ORC].
+- Greldrog (16381), Sailors Guild (123), avoiding, behind, orc [ORC].
+- Granva (16400), Sailors Guild (123), avoiding, behind, orc [ORC].
+- Tulne (16401), Sailors Guild (123), avoiding, behind, 5 orcs [ORC].
+- Lukgar (16407), Sailors Guild (123), avoiding, behind, 5 orcs [ORC].
+- Rongrim (16453), Sailors Guild (123), avoiding, behind, 5 orcs
+  [ORC].
+- Rongrim (16511), Sailors Guild (123), avoiding, behind, 5 orcs
+  [ORC].
+- Grom (16512), Sailors Guild (123), avoiding, behind, 5 orcs [ORC].
+* Chieftain Crauh Gulzik (75), Crauh Skijan (119), avoiding, behind,
+  revealing faction, holding, won't cross water, leader [LEAD], 1360
+  silver [SILV]. Weight: 10. Capacity: 0/0/15/0. Skills: observation
+  [OBSE] 3 (180), force [FORC] 2 (105), pattern [PATT] 2 (90), spirit
+  [SPIR] 2 (90), gate lore [GATE] 1 (30), fire [FIRE] 1 (30), combat
+  [COMB] 3 (180), endurance [ENDU] 3 (180), farsight [FARS] 1 (60),
+  illusion [ILLU] 1 (80), phantasmal entertainment [PHEN] 1 (30),
+  earth lore [EART] 1 (30). Can Study: fire [FIRE], earthquake [EQUA],
+  force shield [FSHI], energy shield [ESHI], spirit shield [SSHI],
+  magical healing [MHEA], gate lore [GATE], farsight [FARS], mind
+  reading [MIND], weather lore [WEAT], earth lore [EART], wolf lore
+  [WOLF], bird lore [BIRD], necromancy [NECR], demon lore [DEMO],
+  illusion [ILLU], create phantasmal beasts [PHBE], create phantasmal
+  undead [PHUN], create phantasmal demons [PHDE], dispel illusions
+  [DISP], artifact lore [ARTI].
+- Worker (15944), WindMasters (110), 6 orcs [ORC], 6 cloth armor
+  [CLAR], stone [STON].
+- Boss Man (264), Badjula Tribe (125), leader [LEAD].
+- Fisherman (15242), WindMasters (110), behind, gnoll [GNOL].
+
++ Crypt [1] : Crypt, closed to player units.
+
++ Building [2] : Tower.
+  - Unit (7), WindMasters (110), behind, leader [LEAD], cloth armor
+    [CLAR], wooden shield [WSHD], 2 mithril swords [MSWO].
+  - Worker (13736), WindMasters (110), 5 orcs [ORC], 5 axes [AXE], 4
+    wooden shields [WSHD].
+
++ Ship [1238] : Raft.
+  - Worker (15071), WindMasters (110), 5 orcs [ORC], 5 axes [AXE], 5
+    cloth armor [CLAR], 18 wood [WOOD].
+
+
+ocean (69,35) in Atlantis Ocean.
+------------------------------------------------------------
+  Wages: $0.
+  Wanted: none.
+  For Sale: none.
+  Products: 33 fish [FISH].
+
+Exits:
+  North : ocean (69,33) in Atlantis Ocean.
+  Northeast : ocean (70,34) in Atlantis Ocean.
+  Southeast : ocean (70,36) in Atlantis Ocean.
+  South : ocean (69,37) in Atlantis Ocean.
+  Southwest : ocean (68,36) in Atlantis Ocean.
+  Northwest : ocean (68,34) in Atlantis Ocean.
+
+
+
+ocean (68,36) in Atlantis Ocean.
+------------------------------------------------------------
+  Wages: $0.
+  Wanted: none.
+  For Sale: none.
+  Products: 26 fish [FISH].
+
+Exits:
+  North : ocean (68,34) in Atlantis Ocean.
+  Northeast : ocean (69,35) in Atlantis Ocean.
+  Southeast : ocean (69,37) in Atlantis Ocean.
+  South : ocean (68,38) in Atlantis Ocean.
+  Southwest : ocean (67,37) in Atlantis Ocean.
+  Northwest : swamp (67,35) in Aictred.
+
+* Turtle Clan (5080), Crauh Skijan (119), holding, sharing, 5
+  lizardmen [LIZA], 4 giant turtles [TURT]. Weight: 450. Capacity:
+  0/0/475/535. Skills: combat [COMB] 1 (35), riding [RIDI] 1 (30).
+
++ Dark Pine [401] : Longship; 6th scoutship of the Holy Fleet.
+  - Fishers (8788), Kingdom of Charles (35), avoiding, goblin [GBLN],
+    2 nets [NET], 22 fish [FISH].
+  - Fisherman (11107), Kingdom of Charles (35), avoiding, behind,
+    gnoll [GNOL], 88 giant turtles [TURT], net [NET].
+  - Priest (5332), Kingdom of Charles (35), avoiding, behind, hill
+    dwarf [HDWA], 2 picks [PICK], 39 rough gems [RGEM].
+  - Miners (6657), Kingdom of Charles (35), avoiding, behind, hill
+    dwarf [HDWA], pick [PICK], 52 rough gems [RGEM].
+  - Fishers (12730), Kingdom of Charles (35), behind, 3 goblins
+    [GBLN], 9 nets [NET], 143 fish [FISH].
+
+
+
+
+
+Orders Template (Long Format):
+
+#atlantis 119 "CrauhSkijan4ever"
+
+;*** tundra (5,9) in Cirmon ***
+
+unit 15975
+;Tyro Crauh Guthug (15975), avoiding, behind, revealing faction,
+;  holding, sharing, weightless battle spoils, gnome [GNOM]. Weight: 5.
+;  Capacity: 0/0/7/0. Skills: observation [OBSE] 1 (30).
+
+unit 15977
+;Tyro Crauh Prigka (15977), avoiding, behind, revealing faction,
+;  holding, sharing, weightless battle spoils, gnome [GNOM]. Weight: 5.
+;  Capacity: 0/0/7/0. Skills: observation [OBSE] 1 (30).
+
+unit 15984
+;Tyro Crauh Urag (15984), avoiding, behind, revealing faction, holding,
+;  sharing, weightless battle spoils, gnome [GNOM]. Weight: 5.
+;  Capacity: 0/0/7/0. Skills: observation [OBSE] 1 (30).
+
+;*** forest (12,12) in Miciasmhurst ***
+
+unit 4319
+;Pegasus Clan (4319), avoiding, behind, revealing faction, holding,
+;  sharing, orc [ORC], winged horse [WING], 111 silver [SILV]. Weight:
+;  60. Capacity: 70/70/85/0. Skills: fishing [FISH] 2 (90), observation
+;  [OBSE] 1 (30).
+
+;*** plain (7,13) in Elrun ***
+
+unit 2681
+;Wolf Clan (2681), holding, taxing, sharing, consuming unit's food,
+;  won't cross water, 60 humans [HUMN], 2864 silver [SILV]. Weight:
+;  600. Capacity: 0/0/900/0. Skills: combat [COMB] 1 (53).
+
+unit 6874
+;Ruby Clan (6874), avoiding, revealing faction, holding, sharing, won't
+;  cross water, 6 gnolls [GNOL], 6 horses [HORS], 11 livestock [LIVE],
+;  301 grain [GRAI], 84 silver [SILV]. Weight: 2415. Capacity:
+;  0/420/1060/0. Skills: farming [FARM] 2 (90).
+
+unit 1297
+;Ox Clan (1297), avoiding, behind, revealing faction, holding, sharing,
+;  won't cross water, 25 humans [HUMN], 25 bags [BAG], 90 grain [GRAI].
+;  Weight: 725. Capacity: 0/0/375/0. Skills: farming [FARM] 2 (125).
+@PRODUCE GRAIN
+
+unit 4377
+;Willow Clan (4377), avoiding, behind, revealing faction, holding,
+;  sharing, won't cross water, 4 high elves [HELF], 4 longbows [LBOW],
+;  47 grain [GRAI]. Weight: 279. Capacity: 0/0/60/0. Skills: farming
+;  [FARM] 2 (90), longbow [LBOW] 1 (30).
+@PRODUCE GRAIN
+
+unit 3131
+;Mustang Clan (3131), avoiding, behind, revealing faction, holding,
+;  sharing, won't cross water, 20 humans [HUMN], 70 horses [HORS].
+;  Weight: 3700. Capacity: 0/4900/5200/0. Skills: horse training [HORS]
+;  2 (90).
+@PRODUCE HORSE
+
+unit 16006
+;Tyro Crauh Dulug (16006), holding, sharing, consuming unit's food,
+;  won't cross water, human [HUMN]. Weight: 10. Capacity: 0/0/15/0.
+;  Skills: observation [OBSE] 1 (30).
+
+unit 16015
+;Wolf Clan (16015), holding, sharing, consuming unit's food, won't
+;  cross water, 60 humans [HUMN]. Weight: 600. Capacity: 0/0/900/0.
+;  Skills: combat [COMB] 1 (30).
+
+;*** forest (8,14) in Pahi ***
+
+unit 2725
+;Oak Clan (2725), avoiding, behind, revealing faction, sharing, won't
+;  cross water, 5 high elves [HELF], 8 livestock [LIVE]. Weight: 450.
+;  Capacity: 0/0/475/0. Skills: building [BUIL] 0 (6), combat [COMB] 2
+;  (90), farming [FARM] 2 (90).
+
+unit 6398
+;Willow Clan (6398), revealing faction, sharing, won't cross water, 9
+;  high elves [HELF], 7 spears [SPEA], leather armor [LARM], 9
+;  mushrooms [MUSH], 60 silver [SILV]. Weight: 98. Capacity: 0/0/135/0.
+;  Skills: combat [COMB] 1 (40).
+
+unit 3240
+;Bear Clan (3240), avoiding, behind, revealing faction, holding,
+;  sharing, won't cross water, 9 gnolls [GNOL]. Weight: 90. Capacity:
+;  0/0/135/0. Skills: lumberjack [LUMB] 2 (90), armorer [ARMO] 2 (120).
+
+;*** forest (10,14) in Guacot, contains Puwood [town] ***
+
+unit 4531
+;Beaver Clan (4531), avoiding, behind, revealing faction, holding,
+;  won't cross water, 10 orcs [ORC], 335 silver [SILV]. Weight: 100.
+;  Capacity: 0/0/150/0. Skills: building [BUIL] 4 (320).
+
+;*** plain (7,15) in Elrun ***
+
+unit 6250
+;Elder Crauh Jukha (6250), avoiding, behind, sharing, weightless battle
+;  spoils, gnoll [GNOL]. Weight: 10. Capacity: 0/0/15/0. Skills:
+;  observation [OBSE] 2 (90), stealth [STEA] 2 (90).
+
+unit 5967
+;Wolf Clan (5967), on guard, revealing faction, holding, taxing,
+;  sharing, won't cross water, 5 gnolls [GNOL], 16 high elves [HELF],
+;  leather armor [LARM], 1764 silver [SILV]. Weight: 211. Capacity:
+;  0/0/315/0. Skills: combat [COMB] 1 (78), farming [FARM] 0 (10),
+;  horse training [HORS] 0 (23).
+
+unit 4378
+;Bull Clan (4378), avoiding, behind, revealing faction, holding,
+;  sharing, won't cross water, 23 humans [HUMN], 28 lassoes [LASS], 182
+;  livestock [LIVE]. Weight: 9358. Capacity: 0/0/9445/0. Skills:
+;  building [BUIL] 0 (6), combat [COMB] 0 (8), farming [FARM] 4 (300).
+@PRODUCE LIVESTOCK
+
+unit 6619
+;Wolf Clan (6619), on guard, revealing faction, holding, taxing,
+;  sharing, won't cross water, 40 centaurs [CTAU], 4221 silver [SILV].
+;  Weight: 2000. Capacity: 0/2800/2800/0. Skills: combat [COMB] 1 (35).
+
+unit 9183
+;Mustang Clan (9183), avoiding, behind, revealing faction, sharing,
+;  won't cross water, 5 centaurs [CTAU], 100 horses [HORS], 2 lassoes
+;  [LASS]. Weight: 5252. Capacity: 0/7350/7350/0. Skills: combat [COMB]
+;  0 (22), farming [FARM] 0 (13), horse training [HORS] 5 (450).
+@PRODUCE HORSE
+
+unit 9731
+;Thunder Clan (9731), on guard, behind, revealing faction, holding,
+;  sharing, won't cross water, 50 centaurs [CTAU], 255 silver [SILV].
+;  Weight: 2500. Capacity: 0/3500/3500/0. Skills: riding [RIDI] 2
+;  (150), combat [COMB] 2 (90).
+
+unit 2722
+;Ruby Clan (2722), avoiding, behind, revealing faction, holding,
+;  sharing, won't cross water, 4 centaurs [CTAU], 20 silver [SILV].
+;  Weight: 200. Capacity: 0/280/280/0. Skills: riding [RIDI] 2 (120).
+
+unit 6877
+;Milicja (6877), avoiding, behind, revealing faction, holding, sharing,
+;  won't cross water, 6 high elves [HELF], 105 silver [SILV]. Weight:
+;  60. Capacity: 0/0/90/0. Skills: combat [COMB] 2 (90).
+@work
+
+;*** jungle (7,17) in Stydarnir ***
+
+unit 5384
+;Hawk Clan (5384), avoiding, behind, revealing faction, holding,
+;  sharing, 4 ice dwarves [IDWA], 1854 silver [SILV]. Weight: 40.
+;  Capacity: 0/0/60/0. Skills: combat [COMB] 4 (420). Can Study:
+;  endurance [ENDU].
+
+unit 17169
+;Wolf Clan (17169), avoiding, behind, revealing faction, holding,
+;  sharing, weightless battle spoils, 10 humans [HUMN]. Weight: 100.
+;  Capacity: 0/0/150/0. Skills: combat [COMB] 1 (30).
+
+;*** jungle (9,17) in Stydarnir, contains Ecaulgol [town] ***
+
+unit 16021
+;Tyro Crauh Rogmesh (16021), avoiding, behind, revealing faction,
+;  holding, sharing, weightless battle spoils, orc [ORC]. Weight: 10.
+;  Capacity: 0/0/15/0. Skills: quartermaster [QUAM] 1 (30).
+
+unit 16046
+;Tyro Crauh Batul (16046), avoiding, behind, revealing faction,
+;  holding, sharing, weightless battle spoils, orc [ORC]. Weight: 10.
+;  Capacity: 0/0/15/0. Skills: quartermaster [QUAM] 1 (30).
+
+unit 16068
+;Tyro Crauh Muk (16068), avoiding, behind, revealing faction, holding,
+;  sharing, weightless battle spoils, orc [ORC], 100 silver [SILV].
+;  Weight: 10. Capacity: 0/0/15/0. Skills: none.
+
+;*** swamp (6,20) in Duntu ***
+
+unit 16073
+;Tyro Crauh Zuhgan (16073), avoiding, behind, revealing faction,
+;  holding, sharing, weightless battle spoils, gnoll [GNOL], 100 silver
+;  [SILV]. Weight: 10. Capacity: 0/0/15/0. Skills: none.
+
+unit 16098
+;Bear Clan (16098), avoiding, behind, revealing faction, holding,
+;  sharing, weightless battle spoils, 10 gnolls [GNOL]. Weight: 100.
+;  Capacity: 0/0/150/0. Skills: lumberjack [LUMB] 1 (30).
+
+;*** jungle (8,20) in Stydarnir ***
+
+unit 16139
+;Tyro Crauh Bugdul (16139), avoiding, behind, revealing faction,
+;  holding, sharing, weightless battle spoils, lizardman [LIZA].
+;  Weight: 10. Capacity: 0/0/15/15. Skills: observation [OBSE] 1 (30).
+
+;*** jungle (5,21) in Stydarnir, contains Vipera [city] ***
+
+unit 17173
+;Horse Clan (17173), avoiding, behind, revealing faction, holding,
+;  sharing, weightless battle spoils, human [HUMN], horse [HORS].
+;  Weight: 60. Capacity: 0/70/85/0. Skills: riding [RIDI] 1 (40).
+
+;*** desert (7,21) in Thesipaiss ***
+
+unit 17171
+;Horse Clan (17171), avoiding, behind, revealing faction, holding,
+;  sharing, weightless battle spoils, human [HUMN], horse [HORS].
+;  Weight: 60. Capacity: 0/70/85/0. Skills: riding [RIDI] 1 (35).
+
+unit 16141
+;Tyro Crauh Hogug (16141), avoiding, behind, revealing faction,
+;  holding, sharing, weightless battle spoils, goblin [GBLN]. Weight:
+;  5. Capacity: 0/0/7/0. Skills: observation [OBSE] 1 (30).
+
+;*** desert (9,21) in Thesipaiss ***
+
+unit 17172
+;Horse Clan (17172), avoiding, behind, revealing faction, holding,
+;  sharing, weightless battle spoils, human [HUMN], horse [HORS].
+;  Weight: 60. Capacity: 0/70/85/0. Skills: riding [RIDI] 1 (45).
+
+unit 17170
+;Horse Clan (17170), avoiding, behind, revealing faction, holding,
+;  sharing, weightless battle spoils, human [HUMN], horse [HORS].
+;  Weight: 60. Capacity: 0/70/85/0. Skills: riding [RIDI] 1 (45).
+
+;*** ocean (69,25) in Atlantis Ocean ***
+
+unit 15411
+;Turtle Clan (15411), avoiding, behind, revealing faction, holding, orc
+;  [ORC], giant turtle [TURT]. Weight: 110. Capacity: 0/0/115/115.
+;  Skills: combat [COMB] 1 (30), observation [OBSE] 1 (30).
+
+;*** forest (70,26) in Goldsinshaw ***
+
+unit 10387
+;Bear Clan (10387), behind, revealing faction, holding, sharing,
+;  consuming faction's food, won't cross water, 5 centaurs [CTAU], 5
+;  axes [AXE], 23 wood [WOOD]. Weight: 370. Capacity: 0/350/350/0.
+;  Skills: lumberjack [LUMB] 3 (190).
+@PRODUCE WOOD
+
+unit 9353
+;Rabbit Clan (9353), behind, revealing faction, sharing, consuming
+;  faction's food, won't cross water, orc [ORC], 4 axes [AXE], 4 spears
+;  [SPEA], 6 longbows [LBOW]. Weight: 24. Capacity: 0/0/15/0. Skills:
+;  weaponsmith [WEAP] 2 (90), combat [COMB] 1 (30), observation [OBSE]
+;  1 (55), entertainment [ENTE] 1 (30).
+@PRODUCE LBOW
+
+unit 9360
+;Prospector (9360), behind, revealing faction, sharing, consuming
+;  faction's food, won't cross water, orc [ORC], 5 yew [YEW]. Weight:
+;  35. Capacity: 0/0/15/0. Skills: lumberjack [LUMB] 5 (450).
+@PRODUCE YEW
+@GIVE 8811 5 YEW
+
+unit 10699
+;Bear Clan (10699), behind, revealing faction, holding, sharing,
+;  consuming faction's food, won't cross water, 5 centaurs [CTAU], 5
+;  axes [AXE], 34 wood [WOOD]. Weight: 425. Capacity: 0/350/350/0.
+;  Skills: lumberjack [LUMB] 3 (235).
+@PRODUCE WOOD
+
+unit 11105
+;Ox Clan (11105), behind, revealing faction, holding, sharing,
+;  consuming faction's food, won't cross water, 5 centaurs [CTAU].
+;  Weight: 250. Capacity: 0/350/350/0. Skills: farming [FARM] 3 (205).
+@PRODUCE LIVESTOCK
+
+unit 11420
+;Thunder Clan (11420), behind, revealing faction, holding, sharing,
+;  consuming faction's food, won't cross water, 5 centaurs [CTAU], 5
+;  spears [SPEA], 45 furs [FUR]. Weight: 300. Capacity: 0/350/350/0.
+;  Skills: hunting [HUNT] 2 (90).
+@PRODUCE FUR
+
+unit 4045
+;Tyro Crauh Nargol (4045), avoiding, behind, revealing faction,
+;  holding, sharing, centaur [CTAU]. Weight: 50. Capacity: 0/70/70/0.
+;  Skills: none.
+
+unit 11687
+;Ox Clan (11687), behind, revealing faction, holding, sharing,
+;  consuming faction's food, won't cross water, 5 centaurs [CTAU], 23
+;  livestock [LIVE]. Weight: 1400. Capacity: 0/350/1500/0. Skills:
+;  farming [FARM] 3 (215).
+@PRODUCE LIVE
+
+unit 13548
+;Wolf Clan (13548), on guard, revealing faction, taxing, sharing,
+;  consuming faction's food, won't cross water, 23 hill dwarves [HDWA],
+;  932 silver [SILV]. Weight: 230. Capacity: 0/0/345/0. Skills: combat
+;  [COMB] 2 (90); Loyal followers of Holy Cone.
+
+unit 16392
+;Bear Clan (16392), avoiding, behind, revealing faction, holding, 5
+;  centaurs [CTAU], 3 wood [WOOD]. Weight: 265. Capacity: 0/350/350/0.
+;  Skills: lumberjack [LUMB] 1 (35).
+@PRODUCE WOOD
+
+unit 16145
+;Beaver Clan (16145), revealing faction, sharing, consuming faction's
+;  food, won't cross water, 5 centaurs [CTAU]. Weight: 250. Capacity:
+;  0/350/350/0. Skills: none.
+
+unit 16152
+;Dolphin Clan (16152), revealing faction, sharing, consuming faction's
+;  food, won't cross water, 5 centaurs [CTAU]. Weight: 250. Capacity:
+;  0/350/350/0. Skills: shipbuilding [SHIP] 1 (30).
+
+;*** swamp (1,31) in Tradgwern ***
+
+unit 4026
+;Otter Clan (4026), avoiding, behind, revealing faction, holding,
+;  sharing, consuming faction's food, gnoll [GNOL]. Weight: 10.
+;  Capacity: 0/0/15/0. Skills: fishing [FISH] 3 (290), stealth [STEA] 1
+;  (30).
+
+unit 1971
+;Unit (1971), avoiding, behind, revealing faction, sharing, orc [ORC].
+;  Weight: 10. Capacity: 0/0/15/0. Skills: sailing [SAIL] 2 (90),
+;  observation [OBSE] 2 (90), riding [RIDI] 2 (90), stealth [STEA] 1
+;  (30).
+
+unit 2768
+;Otter Clan (2768), avoiding, behind, revealing faction, holding,
+;  sharing, consuming faction's food, won't cross water, weightless
+;  battle spoils, wood elf [WELF]. Weight: 10. Capacity: 0/0/15/0.
+;  Skills: fishing [FISH] 4 (405).
+
+unit 15957
+;Bear Clan (15957), avoiding, behind, revealing faction, holding,
+;  sharing, won't cross water, 5 orcs [ORC], 5 axes [AXE], 4 wood
+;  [WOOD]. Weight: 75. Capacity: 0/0/75/0. Skills: lumberjack [LUMB] 1
+;  (81).
+@PRODUCE WOOD
+
+unit 16325
+;Wolf Clan (16325), on guard, behind, revealing faction, holding,
+;  taxing, sharing, won't cross water, 20 orcs [ORC]. Weight: 200.
+;  Capacity: 0/0/300/0. Skills: combat [COMB] 1 (30).
+
+unit 16327
+;Rabbit Clan (16327), avoiding, behind, revealing faction, holding,
+;  won't cross water, 5 orcs [ORC], 22 axes [AXE], 12 longbows [LBOW].
+;  Weight: 84. Capacity: 0/0/75/0. Skills: weaponsmith [WEAP] 2 (90),
+;  combat [COMB] 1 (30).
+@PRODUCE LBOW
+
+unit 16733
+;Bear Clan (16733), behind, revealing faction, holding, sharing, won't
+;  cross water, 10 orcs [ORC], 10 axes [AXE], 10 wood [WOOD]. Weight:
+;  160. Capacity: 0/0/150/0. Skills: lumberjack [LUMB] 1 (55); Skilled
+;  Lumberjacks.
+@PRODUCE WOOD
+
+unit 16174
+;Eagle Clan (16174), behind, revealing faction, holding, won't cross
+;  water, orc [ORC]. Weight: 10. Capacity: 0/0/15/0. Skills: combat
+;  [COMB] 1 (30), observation [OBSE] 1 (35).
+
+unit 5378
+;Unit (5378), avoiding, behind, revealing faction, sharing, weightless
+;  battle spoils, gnoll [GNOL], winged horse [WING]. Weight: 60.
+;  Capacity: 70/70/85/0. Skills: hunting [HUNT] 5 (450).
+
+unit 16156
+;Beaver Clan (16156), behind, revealing faction, holding, sharing,
+;  won't cross water, 20 orcs [ORC]. Weight: 200. Capacity: 0/0/300/0.
+;  Skills: shipbuilding [SHIP] 1 (30).
+STUDY SHIP 4
+
+unit 16157
+;Bear Clan (16157), behind, revealing faction, holding, sharing, won't
+;  cross water, 20 orcs [ORC]. Weight: 200. Capacity: 0/0/300/0.
+;  Skills: lumberjack [LUMB] 1 (30).
+STUDY LUMB 3
+
+unit 16159
+;Ox Clan (16159), behind, revealing faction, holding, sharing, won't
+;  cross water, 10 orcs [ORC]. Weight: 100. Capacity: 0/0/150/0.
+;  Skills: farming [FARM] 1 (30).
+
+unit 16167
+;Tyro Crauh Borba (16167), behind, revealing faction, holding, sharing,
+;  won't cross water, orc [ORC]. Weight: 10. Capacity: 0/0/15/0.
+;  Skills: none.
+
+unit 16326
+;Dolphin Clan (16326), avoiding, behind, revealing faction, holding,
+;  won't cross water, 2 orcs [ORC]. Weight: 20. Capacity: 0/0/30/0.
+;  Skills: sailing [SAIL] 2 (90), combat [COMB] 1 (30), shipbuilding
+;  [SHIP] 1 (65), observation [OBSE] 1 (35).
+@BUILD HELP 15958
+
+unit 15958
+;Beaver Clan (15958), avoiding, behind, revealing faction, holding, 5
+;  orcs [ORC]. Weight: 50. Capacity: 0/0/75/0. Skills: shipbuilding
+;  [SHIP] 2 (115), combat [COMB] 1 (30).
+@BUILD
+
+;*** ocean (2,32) in Atlantis Ocean ***
+
+unit 15417
+;Dolphin Clan (15417), behind, revealing faction, holding, 2 orcs
+;  [ORC], 27 silver [SILV]. Weight: 20. Capacity: 0/0/30/0. Skills:
+;  sailing [SAIL] 2 (90).
+SAIL NW
+
+;*** mountain (0,34) in Qua'ill, contains Faknean [town] ***
+
+unit 3665
+;Tyro Crauh Taghig (3665), avoiding, behind, revealing faction,
+;  receiving no aid, orc [ORC]. Weight: 10. Capacity: 0/0/15/0. Skills:
+;  entertainment [ENTE] 1 (30).
+
+unit 16328
+;Elder Crauh Dofang (16328), avoiding, behind, revealing faction,
+;  holding, sharing, orc [ORC], 910 silver [SILV]. Weight: 10.
+;  Capacity: 0/0/15/0. Skills: combat [COMB] 3 (210), observation
+;  [OBSE] 1 (60). Can Study: endurance [ENDU].
+STUDY OBSE 2
+
+unit 16483
+;Rat Clan (16483), avoiding, behind, revealing faction, holding, won't
+;  cross water, 5 orcs [ORC], 28 iron [IRON]. Weight: 190. Capacity:
+;  0/0/75/0. Skills: mining [MINI] 2 (110).
+@PRODUCE IRON
+
+unit 16173
+;Mole Clan (16173), avoiding, behind, revealing faction, holding,
+;  sharing, 5 orcs [ORC]. Weight: 50. Capacity: 0/0/75/0. Skills:
+;  quarrying [QUAR] 1 (30).
+
+;*** jungle (3,35) in Ecca'yrk ***
+
+unit 75
+;Chieftain Crauh Gulzik (75), avoiding, behind, revealing faction,
+;  holding, won't cross water, leader [LEAD], 1360 silver [SILV].
+;  Weight: 10. Capacity: 0/0/15/0. Skills: observation [OBSE] 3 (180),
+;  force [FORC] 2 (105), pattern [PATT] 2 (90), spirit [SPIR] 2 (90),
+;  gate lore [GATE] 1 (30), fire [FIRE] 1 (30), combat [COMB] 3 (180),
+;  endurance [ENDU] 3 (180), farsight [FARS] 1 (60), illusion [ILLU] 1
+;  (80), phantasmal entertainment [PHEN] 1 (30), earth lore [EART] 1
+;  (30). Can Study: fire [FIRE], earthquake [EQUA], force shield
+;  [FSHI], energy shield [ESHI], spirit shield [SSHI], magical healing
+;  [MHEA], gate lore [GATE], farsight [FARS], mind reading [MIND],
+;  weather lore [WEAT], earth lore [EART], wolf lore [WOLF], bird lore
+;  [BIRD], necromancy [NECR], demon lore [DEMO], illusion [ILLU],
+;  create phantasmal beasts [PHBE], create phantasmal undead [PHUN],
+;  create phantasmal demons [PHDE], dispel illusions [DISP], artifact
+;  lore [ARTI].
+
+;*** ocean (68,36) in Atlantis Ocean ***
+
+unit 5080
+;Turtle Clan (5080), holding, sharing, 5 lizardmen [LIZA], 4 giant
+;  turtles [TURT]. Weight: 450. Capacity: 0/0/475/535. Skills: combat
+;  [COMB] 1 (35), riding [RIDI] 1 (30).
+MOVE SW NW
+
+#end
+
+

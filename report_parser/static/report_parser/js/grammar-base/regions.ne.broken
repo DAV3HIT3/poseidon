@@ -1,0 +1,261 @@
+@{%
+
+  /* ------------------------------------------------------------
+   * Parse the region header into components
+   * 
+   * type:           mountain, tundra, etc
+   * coordinates:    parsed coords tuple (x, y, z) NOTE: z can be text
+   * zone:           zone name
+   * text:           full header text
+   * hasCity:        boolean
+   * cityName:       city name, if region contains a city
+   * ------------------------------------------------------------ */
+  const regionHeaderProcessor = (d) => {
+    return {
+      type: d[0],
+      coordinates: d[2],
+      zone: d[3],
+      text: array2String(d),
+      hasCity: !!d[8],
+      cityName: !!d[8] && array2String(d[8][3])
+    };
+  }
+
+  /* ------------------------------------------------------------
+   * Region details (wages, wanted, for sale, entertainment, products)
+   * ------------------------------------------------------------ */
+  const regionDetailsProcessor = (d) => {
+    return {
+      type: d[2][0],
+      details: d[5],
+      text: array2String(d)
+    };
+  };
+
+  /* ------------------------------------------------------------
+   * ------------------------------------------------------------ */
+  const regionExitProcessor = (d, hasCity) => {
+    return {
+      id: `${d[8].x}_${d[8].y}_${d[8].z}`,
+      title: array2String(d.slice(6)),
+      coordinates: d[8],
+      type: array2String(d[6]),
+      direction: d[2],
+      isExit: true,
+      details: [],
+      unitsAndObjectsRaw: [],
+      hasCity
+    };
+  };
+
+  const emptyExitProcessor = (d) => {
+    return {
+      id: "none",
+      title: "none",
+      coordinates: "none",
+      type: "none",
+      direction: "none",
+      isExit: false,
+      details: [],
+      unitsAndObjectsRaw: [],
+      hasCity: false
+    };
+  };
+
+
+  /* ------------------------------------------------------------
+   * ------------------------------------------------------------ */
+  const regionProcessor = (d) => {
+    const exits = (Array.isArray(d[8]) ? d[8].reduce((result, exit) => {
+      result[exit.direction.toLowerCase()] = exit;
+      return result;
+    }, {}) : {"none":d[8]} ); 
+
+    return {
+      id: `${d[0].coordinates.x}_${d[0].coordinates.y}_${d[0].coordinates.z}`,
+      title: d[0].text,
+      coordinates: d[0].coordinates,
+      weather: array2String(d[2]),
+      details: d[4],
+      exits: exits,
+      gate: d[10],
+      unitsAndObjectsRaw: d[11],
+      type: d[0].type,
+      zone: d[0].zone,
+      hasCity: d[0].hasCity,
+      cityName: d[0].cityName,
+      isExit: false
+    };
+  };
+
+  /* ------------------------------------------------------------
+   * ------------------------------------------------------------ */
+  const regionsProcessor = (d) => {
+    return {
+      type: "REGIONS",
+      regions: d[0]
+    };
+  };
+%}
+
+
+# ------------------------------------------------------------
+# REGIONS RULES
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+# One or more regions, return as dictionary {type: REGIONS, regions: [...,array of regions]}
+# ------------------------------------------------------------
+FACTION_REGIONS ->
+  FACTION_REGION:+ {% regionsProcessor %}
+# ------------------------------------------------------------
+
+
+# ------------------------------------------------------------
+# Grammar for a single region
+# ------------------------------------------------------------
+FACTION_REGION ->
+  FACTION_REGION_HEADER
+  "------------------------------------------------------------" NL
+  #REGION_WEATHER:?
+  #(NL _ _ REGION_DESCRIPTION):?
+  FACTION_REGION_DETAILS:+
+  NL_
+  "Exits:" NL
+  FACTION_REGION_EXIT:+
+  NL_
+  FACTION_REGION_GATE:?
+  FACTION_REGION_UNIT:*
+
+#  FACTION_REGION_BLDG:*
+#  FACTION_REGION_SHAFT:*
+#  FACTION_REGION_FLEET:*
+
+  {% regionProcessor %}
+# ------------------------------------------------------------
+
+
+# ------------------------------------------------------------
+# Region header
+# ------------------------------------------------------------
+FACTION_REGION_HEADER ->
+  REGION_TYPE _ REGION_COORDINATES _ "in" _ REGION_ZONE "." NL {% (d) => regionHeaderProcessor(d) %}
+  | REGION_TYPE _ REGION_COORDINATES _ "in" _ TEXT_NO_SYMBOLS "," FACTION_REGION_HEADER_CITY:? __AND_NL TEXT_NO_SYMBOLS "," __AND_NL "$" INT "." NL {% (d) => regionHeaderProcessor(d) %}
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+# Region type
+# ------------------------------------------------------------
+REGION_TYPE ->
+  TEXT_NO_SYMBOLS
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+# Region zone
+# ------------------------------------------------------------
+REGION_ZONE ->
+  TEXT_NO_SYMBOLS
+# ------------------------------------------------------------
+
+
+
+# ------------------------------------------------------------
+FACTION_REGION_HEADER_CITY ->
+  _ "contains" _ TEXT _ "[" ("city"|"town"|"village") "],"
+# ------------------------------------------------------------
+
+
+# ------------------------------------------------------------
+FACTION_REGION_DETAILS ->
+  _ _:? REGION_SECTION_TYPE ":" __ REGION_PARAGRAPH NL {% regionDetailsProcessor %}
+# ------------------------------------------------------------
+
+
+# ------------------------------------------------------------
+FACTION_REGION_EXIT ->
+  _ _ "none" NL {% (d) => emptyExitProcessor(d) %}
+  | _ _:? WORD _ ":" _ WORD _ REGION_COORDINATES _ TEXT_NO_SYMBOLS "." NL {% (d) => regionExitProcessor(d, false)  %}
+  | _ _:? WORD _ ":" _ WORD _ REGION_COORDINATES _ TEXT_NO_SYMBOLS ","
+    _ "contains" __AND_NL TEXT_NO_SYMBOLS __AND_NL "[" ("city"|"town"|"village") "]."  NL {% (d) => regionExitProcessor(d, true)  %}
+# ------------------------------------------------------------
+
+
+# ------------------------------------------------------------
+FACTION_REGION_GATE ->
+  "There is a Gate here (Gate " INT " of " INT ")." NL_ {% array2String %}
+# ------------------------------------------------------------
+
+
+# ------------------------------------------------------------
+FACTION_REGION_UNIT ->
+[*+\-] _ TEXT "." NL_ {% array2String %}
+#  [*+\-] _ UNIT_NAME _ TEXT "." NL_ {% array2String %}
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+FACTION_REGION_BLDG ->
+  [*+\-] _ TEXT "." NL_ {% array2String %}
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+FACTION_REGION_FLEET ->
+  [*+\-] _ TEXT "." NL_ {% array2String %}
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+FACTION_REGION_SHAFT ->
+  [*+\-] _ TEXT "." NL_ {% array2String %}
+# ------------------------------------------------------------
+
+
+# ------------------------------------------------------------
+REGION_PARAGRAPH ->
+  WORD [.!]
+  | WORD _ REGION_PARAGRAPH {% array2String %}
+  | WORD NL _ _ _ _:? REGION_PARAGRAPH {% array2String %}
+# ------------------------------------------------------------
+
+
+# ------------------------------------------------------------
+REGION_SECTION_TYPE ->
+  "Wages"
+  | "Wanted"
+  | "For Sale"
+  | "Entertainment available"
+  | "Products"
+# ------------------------------------------------------------
+
+
+# ------------------------------------------------------------
+#REGION_WEATHER ->
+#  _ _:? REGION_PARAGRAPH _ REGION_PARAGRAPH NL
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+REGION_DESCRIPTION ->
+  _ _ REGION_PARAGRAPH 
+# ------------------------------------------------------------
+
+
+# ------------------------------------------------------------
+#REGION_PARAGRAPH ->
+#  WORD [;]
+#  | WORD _ REGION_PARAGRAPH {% array2String %}
+#  | WORD NL _ _ _ _:? REGION_PARAGRAPH {% array2String %}
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+# Faction tag is pair: "Faction name" (Faction ID)
+FACTION_TAG ->
+  WORD_NO_SYMBOLS _ "(" INT ")," 
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+# Unit detail
+#UNIT_DETAIL ->
+#  UNIT_NAME "," _ UNIT_RACE "." {% 
+# ------------------------------------------------------------
+
+
+
+

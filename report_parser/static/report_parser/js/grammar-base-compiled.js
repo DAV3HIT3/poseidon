@@ -3,6 +3,7 @@
 (function () {
 function id(x) { return x[0]; }
 
+  
   const noop = () => null;
 
   const filterEmpty = (d) => {
@@ -173,6 +174,16 @@ function id(x) { return x[0]; }
 
 
 
+  /* -----------------------------------------------
+  Parse the region header into components
+
+  type:         mountain, tundra, etc
+  coordinates:  parsed tuple (x, y, z) 
+  zone:         zone name
+  text:         full header text
+  hasCity:      boolean
+  cityName:     city name, if region contains a city
+  ----------------------------------------------- */
   const regionHeaderProcessor = (d) => {
     return {
       type: d[0],
@@ -183,6 +194,8 @@ function id(x) { return x[0]; }
     };
   }
 
+  /* -----------------------------------------------
+  ----------------------------------------------- */
   const regionDetailsProcessor = (d) => {
     return {
       type: d[2][0],
@@ -191,6 +204,8 @@ function id(x) { return x[0]; }
     };
   };
 
+  /* -----------------------------------------------
+  ----------------------------------------------- */
   const regionExitProcessor = (d, hasCity) => {
     return {
       id: `${d[8].x}_${d[8].y}_${d[8].z}`,
@@ -205,6 +220,8 @@ function id(x) { return x[0]; }
     };
   };
 
+  /* -----------------------------------------------
+  ----------------------------------------------- */
   const regionProcessor = (d) => {
     const exits = d[8].reduce((result, exit) => {
       result[exit.direction.toLowerCase()] = exit;
@@ -227,6 +244,8 @@ function id(x) { return x[0]; }
     };
   };
 
+  /* -----------------------------------------------
+  ----------------------------------------------- */
   const regionsProcessor = (d) => {
     return {
       type: "REGIONS",
@@ -273,12 +292,14 @@ var grammar = {
     {"name": "TEXT", "symbols": ["WORD"]},
     {"name": "TEXT", "symbols": ["WORD", "__", "TEXT"], "postprocess": array2String},
     {"name": "TEXT", "symbols": ["WORD", "NL", "__", "TEXT"], "postprocess": array2String},
-    {"name": "WORD$ebnf$1", "symbols": [/[^\n\r ]/]},
-    {"name": "WORD$ebnf$1", "symbols": ["WORD$ebnf$1", /[^\n\r ]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "WORD", "symbols": ["WORD$ebnf$1"], "postprocess": array2String},
     {"name": "TEXT_NO_SYMBOLS", "symbols": ["WORD_NO_SYMBOLS"]},
     {"name": "TEXT_NO_SYMBOLS", "symbols": ["WORD_NO_SYMBOLS", "__", "TEXT_NO_SYMBOLS"], "postprocess": array2String},
     {"name": "TEXT_NO_SYMBOLS", "symbols": ["WORD_NO_SYMBOLS", "NL", "__", "TEXT_NO_SYMBOLS"], "postprocess": array2String},
+    {"name": "WORDS", "symbols": ["WORD"]},
+    {"name": "WORDS", "symbols": ["WORD", "__", "WORDS"], "postprocess": array2String},
+    {"name": "WORD$ebnf$1", "symbols": [/[^\n\r ]/]},
+    {"name": "WORD$ebnf$1", "symbols": ["WORD$ebnf$1", /[^\n\r ]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
+    {"name": "WORD", "symbols": ["WORD$ebnf$1"], "postprocess": array2String},
     {"name": "WORD_NO_SYMBOLS$ebnf$1", "symbols": [/[^\n\r,.! ]/]},
     {"name": "WORD_NO_SYMBOLS$ebnf$1", "symbols": ["WORD_NO_SYMBOLS$ebnf$1", /[^\n\r,.! ]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "WORD_NO_SYMBOLS", "symbols": ["WORD_NO_SYMBOLS$ebnf$1"], "postprocess": array2String},
@@ -291,9 +312,6 @@ var grammar = {
     {"name": "LC_WORD$ebnf$1", "symbols": [/[a-z\-]/]},
     {"name": "LC_WORD$ebnf$1", "symbols": ["LC_WORD$ebnf$1", /[a-z\-]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "LC_WORD", "symbols": ["LC_WORD$ebnf$1"]},
-    {"name": "UNIT_NAME$ebnf$1", "symbols": [/[^():;]/]},
-    {"name": "UNIT_NAME$ebnf$1", "symbols": ["UNIT_NAME$ebnf$1", /[^():;]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "UNIT_NAME", "symbols": ["UNIT_NAME$ebnf$1", "__", {"literal":"("}, "INT", {"literal":")"}], "postprocess": parseUnitName},
     {"name": "REGION_Z_LEVEL$string$1", "symbols": [{"literal":","}, {"literal":"n"}, {"literal":"e"}, {"literal":"x"}, {"literal":"u"}, {"literal":"s"}], "postprocess": function joiner(d) {return d.join('');}},
     {"name": "REGION_Z_LEVEL", "symbols": ["REGION_Z_LEVEL$string$1"], "postprocess": (d) => ({ title: d[0], z: 0 })},
     {"name": "REGION_Z_LEVEL", "symbols": [], "postprocess": (d) => ({ title: "", z: 1 })},
@@ -482,6 +500,7 @@ var grammar = {
     {"name": "FACTION_REGION_GATE$string$3", "symbols": [{"literal":")"}, {"literal":"."}], "postprocess": function joiner(d) {return d.join('');}},
     {"name": "FACTION_REGION_GATE", "symbols": ["FACTION_REGION_GATE$string$1", "INT", "FACTION_REGION_GATE$string$2", "INT", "FACTION_REGION_GATE$string$3", "NL_"], "postprocess": array2String},
     {"name": "FACTION_REGION_UNIT", "symbols": [/[*+\-]/, "_", "TEXT", {"literal":"."}, "NL_"], "postprocess": array2String},
+    {"name": "UNIT_NAME", "symbols": ["WORDS", "_", {"literal":"("}, "INT", {"literal":")"}], "postprocess": parseUnitName},
     {"name": "REGION_SENTENCE", "symbols": ["WORD", /[.!]/]},
     {"name": "REGION_SENTENCE", "symbols": ["WORD", "_", "REGION_SENTENCE"], "postprocess": array2String},
     {"name": "REGION_SENTENCE$ebnf$1", "symbols": ["_"], "postprocess": id},
@@ -547,8 +566,12 @@ var grammar = {
     {"name": "REPORT_PARSER$ebnf$8", "symbols": ["FACTION_ATTITUDES"], "postprocess": id},
     {"name": "REPORT_PARSER$ebnf$8", "symbols": [], "postprocess": function(d) {return null;}},
     {"name": "REPORT_PARSER", "symbols": ["START", "REPORT_FACTION", "REPORT_DATE", "ATL_VERSION", "FACTION_STATUS", "REPORT_PARSER$ebnf$1", "REPORT_PARSER$ebnf$2", "REPORT_PARSER$ebnf$3", "REPORT_PARSER$ebnf$4", "REPORT_PARSER$ebnf$5", "REPORT_PARSER$ebnf$6", "REPORT_PARSER$ebnf$7", "REPORT_PARSER$ebnf$8", "FACTION_UNCLAIMED", "FACTION_REGIONS", "FACTION_ORDERS_TEMPLATE"], "postprocess": filterEmpty},
+    {"name": "START$ebnf$1", "symbols": []},
+    {"name": "START$ebnf$1", "symbols": ["START$ebnf$1", "NL"], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
+    {"name": "START$ebnf$2", "symbols": []},
+    {"name": "START$ebnf$2", "symbols": ["START$ebnf$2", "_"], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "START$string$1", "symbols": [{"literal":"A"}, {"literal":"t"}, {"literal":"l"}, {"literal":"a"}, {"literal":"n"}, {"literal":"t"}, {"literal":"i"}, {"literal":"s"}, {"literal":" "}, {"literal":"R"}, {"literal":"e"}, {"literal":"p"}, {"literal":"o"}, {"literal":"r"}, {"literal":"t"}, {"literal":" "}, {"literal":"F"}, {"literal":"o"}, {"literal":"r"}, {"literal":":"}], "postprocess": function joiner(d) {return d.join('');}},
-    {"name": "START", "symbols": ["START$string$1", "NL_"], "postprocess": noop}
+    {"name": "START", "symbols": ["START$ebnf$1", "START$ebnf$2", "START$string$1", "NL_"], "postprocess": noop}
 ]
   , ParserStart: "REPORT_PARSER"
 }

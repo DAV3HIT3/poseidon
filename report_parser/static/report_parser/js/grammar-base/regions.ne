@@ -1,4 +1,14 @@
 @{%
+  /* -----------------------------------------------
+  Parse the region header into components
+
+  type:         mountain, tundra, etc
+  coordinates:  parsed tuple (x, y, z) 
+  zone:         zone name
+  text:         full header text
+  hasCity:      boolean
+  cityName:     city name, if region contains a city
+  ----------------------------------------------- */
   const regionHeaderProcessor = (d) => {
     return {
       type: d[0],
@@ -9,6 +19,8 @@
     };
   }
 
+  /* -----------------------------------------------
+  ----------------------------------------------- */
   const regionDetailsProcessor = (d) => {
     return {
       type: d[2][0],
@@ -17,6 +29,8 @@
     };
   };
 
+  /* -----------------------------------------------
+  ----------------------------------------------- */
   const regionExitProcessor = (d, hasCity) => {
     return {
       id: `${d[8].x}_${d[8].y}_${d[8].z}`,
@@ -31,6 +45,8 @@
     };
   };
 
+  /* -----------------------------------------------
+  ----------------------------------------------- */
   const regionProcessor = (d) => {
     const exits = d[8].reduce((result, exit) => {
       result[exit.direction.toLowerCase()] = exit;
@@ -53,6 +69,8 @@
     };
   };
 
+  /* -----------------------------------------------
+  ----------------------------------------------- */
   const regionsProcessor = (d) => {
     return {
       type: "REGIONS",
@@ -65,10 +83,16 @@
 # ------------------------------------------------------------
 # REGIONS RULES
 # ------------------------------------------------------------
+
+# ------------------------------------------------------------
+# One or more regions
+# ------------------------------------------------------------
 FACTION_REGIONS ->
   FACTION_REGION:+ {% regionsProcessor %}
 
 
+# ------------------------------------------------------------
+# ------------------------------------------------------------
 FACTION_REGION ->
   FACTION_REGION_HEADER
   "------------------------------------------------------------" NL
@@ -83,40 +107,64 @@ FACTION_REGION ->
   {% regionProcessor %}
 
 
+# ------------------------------------------------------------
+# ------------------------------------------------------------
 FACTION_REGION_HEADER ->
   TEXT_NO_SYMBOLS _ REGION_COORDINATES _ "in" _ TEXT_NO_SYMBOLS "." NL {% (d) => regionHeaderProcessor(d) %}
   | TEXT_NO_SYMBOLS _ REGION_COORDINATES _ "in" _ TEXT_NO_SYMBOLS "," FACTION_REGION_HEADER_CITY:? __AND_NL TEXT_NO_SYMBOLS "," __AND_NL "$" INT "." NL {% (d) => regionHeaderProcessor(d) %}
 
 
 
+# ------------------------------------------------------------
+# ------------------------------------------------------------
 FACTION_REGION_HEADER_CITY ->
   _ "contains" _ TEXT _ "[" ("city"|"town"|"village") "],"
 
 
+# ------------------------------------------------------------
+# ------------------------------------------------------------
 FACTION_REGION_DETAILS ->
   _ _:? REGION_SECTION_TYPE ":" __ REGION_SENTENCE NL {% regionDetailsProcessor %}
 
 
+# ------------------------------------------------------------
+# ------------------------------------------------------------
 FACTION_REGION_EXIT ->
   _ _:? WORD _ ":" _ WORD _ REGION_COORDINATES _ TEXT_NO_SYMBOLS "." NL {% (d) => regionExitProcessor(d, false)  %}
   | _ _:? WORD _ ":" _ WORD _ REGION_COORDINATES _ TEXT_NO_SYMBOLS ","
     _ "contains" __AND_NL TEXT_NO_SYMBOLS __AND_NL "[" ("city"|"town"|"village") "]."  NL {% (d) => regionExitProcessor(d, true)  %}
 
 
+# ------------------------------------------------------------
+# ------------------------------------------------------------
 FACTION_REGION_GATE ->
   "There is a Gate here (Gate " INT " of " INT ")." NL_ {% array2String %}
 
 
+# ------------------------------------------------------------
+# ------------------------------------------------------------
 FACTION_REGION_UNIT ->
   [*+\-] _ TEXT "." NL_ {% array2String %}
+#  [*+\-] _ UNIT_NAME "," _ TEXT "." NL_ {% array2String %}
 
 
+# ------------------------------------------------------------
+# UNIT NAME - unit name (unit ID)
+# ------------------------------------------------------------
+UNIT_NAME ->
+  WORDS _ "(" INT ")" {% parseUnitName %}
+
+
+# ------------------------------------------------------------
+# ------------------------------------------------------------
 REGION_SENTENCE ->
   WORD [.!]
   | WORD _ REGION_SENTENCE {% array2String %}
   | WORD NL _ _ _ _:? REGION_SENTENCE {% array2String %}
 
 
+# ------------------------------------------------------------
+# ------------------------------------------------------------
 REGION_SECTION_TYPE ->
   "Wages"
   | "Wanted"
@@ -125,10 +173,14 @@ REGION_SECTION_TYPE ->
   | "Products"
 
 
+# ------------------------------------------------------------
+# ------------------------------------------------------------
 REGION_WEATHER ->
   _ _:? REGION_WEATHER_SENTENCE _ REGION_SENTENCE NL
 
 
+# ------------------------------------------------------------
+# ------------------------------------------------------------
 REGION_WEATHER_SENTENCE ->
   WORD [;]
   | WORD _ REGION_WEATHER_SENTENCE {% array2String %}

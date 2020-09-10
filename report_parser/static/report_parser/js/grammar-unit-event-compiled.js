@@ -3,6 +3,7 @@
 (function () {
 function id(x) { return x[0]; }
 
+  
   const noop = () => null;
 
   const filterEmpty = (d) => {
@@ -84,12 +85,12 @@ var grammar = {
     {"name": "TEXT", "symbols": ["WORD"]},
     {"name": "TEXT", "symbols": ["WORD", "__", "TEXT"], "postprocess": array2String},
     {"name": "TEXT", "symbols": ["WORD", "NL", "__", "TEXT"], "postprocess": array2String},
-    {"name": "WORD$ebnf$1", "symbols": [/[^\n\r ]/]},
-    {"name": "WORD$ebnf$1", "symbols": ["WORD$ebnf$1", /[^\n\r ]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "WORD", "symbols": ["WORD$ebnf$1"], "postprocess": array2String},
     {"name": "TEXT_NO_SYMBOLS", "symbols": ["WORD_NO_SYMBOLS"]},
     {"name": "TEXT_NO_SYMBOLS", "symbols": ["WORD_NO_SYMBOLS", "__", "TEXT_NO_SYMBOLS"], "postprocess": array2String},
     {"name": "TEXT_NO_SYMBOLS", "symbols": ["WORD_NO_SYMBOLS", "NL", "__", "TEXT_NO_SYMBOLS"], "postprocess": array2String},
+    {"name": "WORD$ebnf$1", "symbols": [/[^\n\r ]/]},
+    {"name": "WORD$ebnf$1", "symbols": ["WORD$ebnf$1", /[^\n\r ]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
+    {"name": "WORD", "symbols": ["WORD$ebnf$1"], "postprocess": array2String},
     {"name": "WORD_NO_SYMBOLS$ebnf$1", "symbols": [/[^\n\r,.! ]/]},
     {"name": "WORD_NO_SYMBOLS$ebnf$1", "symbols": ["WORD_NO_SYMBOLS$ebnf$1", /[^\n\r,.! ]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "WORD_NO_SYMBOLS", "symbols": ["WORD_NO_SYMBOLS$ebnf$1"], "postprocess": array2String},

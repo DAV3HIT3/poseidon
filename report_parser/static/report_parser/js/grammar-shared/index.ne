@@ -66,18 +66,19 @@ INT ->
   [0-9]:+ {% (d) => parseInt(d[0].join("")) %}
 
 
+# Simple single 'space'
 _ ->
   [ ] {% id %}
 
-
+# One or more 'space'
 __ ->
   _:+ {% id %}
 
-
+# 'space' and 'new line'
 __AND_NL ->
   [ \n]:+ {% id %}
 
-
+# One or more words followed by "." or "!"
 SENTENCE ->
   WORD [.!]
   | WORD __ SENTENCE {% array2String %}
@@ -89,17 +90,23 @@ TEXT ->
   | WORD __ TEXT {% array2String %}
   | WORD NL __ TEXT {% array2String %}
 
-
-WORD ->
-  [^\n\r ]:+ {% array2String %}
-
-
+# One or more words with no symbols "," "." or "!"
 TEXT_NO_SYMBOLS ->
   WORD_NO_SYMBOLS
   | WORD_NO_SYMBOLS __ TEXT_NO_SYMBOLS {% array2String %}
   | WORD_NO_SYMBOLS NL __ TEXT_NO_SYMBOLS {% array2String %}
 
+# One or more words (no new lines)
+WORDS ->
+  WORD
+  | WORD __ WORDS {% array2String %}
 
+
+# Word is one or more characters that is not "new line" or "carrige return", or "space"
+WORD ->
+  [^\n\r ]:+ {% array2String %}
+
+# Word minus symbols "," "." "!"
 WORD_NO_SYMBOLS ->
   [^\n\r,.! ]:+ {% array2String %}
 
@@ -120,9 +127,9 @@ LC_WORDS ->
 LC_WORD ->
   [a-z\-]:+
 
-
-UNIT_NAME ->
-  [^():;]:+ __ "(" INT ")" {% parseUnitName %}
+# Unit name is pair "Unit name" (Unit ID)
+#UNIT_NAME ->
+#  [^():;]:+ __ "(" INT ")" {% parseUnitName %}
 
 
 REGION_Z_LEVEL ->
